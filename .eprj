@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>fileTriggers</key>
+        <dict>
+            <key>home</key>
+            <string>app\controllers\home_controller.rb</string>
+            <key>ind</key>
+            <string>app\views\home\index.html.erb</string>
+            <key>rank</key>
+            <string>app\controllers\ranks_controller.rb</string>
+            <key>ranks</key>
+            <string>app\views\layouts\ranks.html.erb</string>
+            <key>rou</key>
+            <string>config\routes.rb</string>
+            <key>rout</key>
+            <string>config\routes.rb</string>
+            <key>route</key>
+            <string>config\routes.rb</string>
+            <key>routes</key>
+            <string>config\routes.rb</string>
+        </dict>
+    </dict>
+</plist>

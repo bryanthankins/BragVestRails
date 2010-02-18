@@ -1,0 +1,132 @@
+ 
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+ 
+<head>    
+    <title>BragVest - Cub Scout achievement tracking</title> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
+    <meta name="language" content="en" />  
+    <meta name="description" content="Cub Scout achievement guide." />  
+    <meta name="keywords" content="cub, scout, achievement, badges, ranks, tiger, wolf, bear, webelos, webelos1, webelos2" />  
+    <meta name="verify-v1" content="n9VfZO6zfmyb7TJCYbgRtAOP1AYoe8f9NjPQ3bNtSyw=" /> 
+    <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection" /> 
+    <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" /> 
+    <!--[if IE]>
+        <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection" />
+    <![endif]--> 
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen, projection" />        
+</head> 
+<body id="homeBody">        
+    <div id="homeContentWrapper">    
+        &nbsp;
+        <div id="homeBanner"> 
+            <div class="container"> 
+                <div id="homeBranding" class="span-12"> 
+                    <img src="/images/logoBig.png" alt="" />                    
+                    <div> 
+                        BragVest provides an easy to reference Cub Scout achievement guide.
+                    </div> 
+                </div> 
+                <div id="homeScoutLinks" class="span-9 prefix-3 last"> 
+                    Cub Scout Ranks
+						<%=yield%>
+	                </div>
+            </div> 
+        </div> 
+        
+        <div id="homeContent" class="container"> 
+            <div id="homeFactsWrapper" class="span-24 last"> 
+                <div class="span-14"> 
+                    <div class="span-7"> 
+                        <div><b>WHAT?</b></div> 
+                        <div> 
+                            BragVest is THE place to <b><i>track all of your Cub Scout achievements!</i></b> We list all of the achievements for your 
+                            rank, and you can check them off as you complete them. What could be easier?
+                        </div> 
+                    </div> 
+                    <div class="span-7 last"> 
+                       <div><b>WHY?</b></div> 
+                       <div> 
+                            This site was created <b><i>BY Cub Scout leaders FOR Cub Scouts and their parents.</i></b>We feel your pain, 
+                            and want to make YOUR life easier. No need to dig through a book with pen and paper anymore!
+                       </div>                   
+                    </div> 
+                    <div class="span-14 last" style="margin-top: 30px"> 
+                        <div> 
+                            <b>HOW?</b> 
+                        </div> 
+                        <form id="interested" method="post" action="">                        
+                            <div> 
+                                We are putting the finishing touches on the BragVest site. Once it's ready, we'll let you know! 
+                            </div> 
+                            <div> 
+                                Email: <input type="text" name="email" /> <input type="submit" name="emailSubmit" value="I'm interested!" /> 
+                            </div>    
+                        </form> 
+                                            
+                    </div> 
+                </div> 
+                <div class="span-9 prefix-1 last"> 
+                    <div> 
+                        <b>FREE BragVest iPhone App!</b> 
+                    </div> 
+                    <div class="span-4"> 
+                        <img src="/images/iphone.gif" alt="BragVest iPhone App" /> 
+                    </div> 
+                    <div class="span-5 last" style="margin-top: 20px"> 
+                        <p> 
+                            Track cub scout achievements on your iPhone! <strong>FREE!</strong> 
+                        </p> 
+                        <p> 
+                            <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=327006143&mt=8">Get the app now</a> 
+                            (will open iTunes) or search the Apple iTunes App Store for "bragvest" or "cub scout".
+                        </p>                        
+                    </div> 
+                </div>                
+            </div> 
+        </div>        
+    </div>    
+    
+    <div id="footerWrapper"> 
+        <div id="footer" class="container"> 
+            <div class="span-8 prefix-1"> 
+                <div class="header"> 
+                    Bragging Socially
+                </div> 
+                <div> 
+                    <a href="http://twitter.com/bragvest"><img src="/images/social/twitter.png" alt="" /><span>Follow us on Twitter</span></a> 
+                </div>                
+            </div> 
+            <div class="span-8 suffix-7 last"> 
+                <div class="header"> 
+                    Cub Scout Ranks
+                </div> 
+                <div> 
+                    <%=yield%>
+                </div> 
+            </div> 
+            <div class="span-8 prefix-1"> 
+                &copy; 2009 bragvest.com
+            </div> 
+            <div class="span-14 suffix-1 last"> 
+                BragVest.com is not associated with or endorsed by the <a href="http://www.scouting.org/">Boy Scouts of America</a>.
+            </div> 
+        </div> 
+    </div> 
+    <script type="text/javascript"> 
+    //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    //]]> 
+    </script> 
+    <script type="text/javascript"> 
+    //<![CDATA[
+        try {
+            var pageTracker = _gat._getTracker("UA-9006604-1");
+            pageTracker._trackPageview();
+        } catch (err) { }
+    //]]> 
+    </script> 
+</body> 
+</html>

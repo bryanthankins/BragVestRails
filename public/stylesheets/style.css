@@ -1,0 +1,86 @@
+/*-----------------------------------------------------------------------------
+[bragvest.com] Screen Stylesheet
+-----------------------------------------------------------------------------*/ 
+
+/**************************************\
+|------------COLOR SCHEME--------------|
+|--------------------------------------|
+- black		#000
+- white		#fff
+\**************************************/
+
+/**************************************/
+/*              GLOBALS               */
+/**************************************/
+
+/* FORMS */
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus { border-color: #888; outline: 2px solid #DAC8B0 }
+
+/* COLORS */
+a:hover { color: #B9282D }
+
+/**************************************/
+/*              HOME                  */
+/**************************************/
+#homeContentWrapper { background-color: #FEDC6E; width: 100% !important }
+
+#homeBanner { padding: 30px 0 30px 0; margin: 25px 0 10px 0; border-bottom: solid 3px #735940; border-top: solid 3px #735940 }
+#homeBanner, #homeBanner div { background-color: #DAC8B0; color: #735940 }
+#homeBanner #homeBranding { text-align: center; font-size: 140%; font-weight: bold }
+
+#homeContent { background-color: #FEDC6E; padding: 1em 0 2em }
+
+#homeScoutLinks { font-size: 200% }
+#homeScoutLinks ul { list-style: none }
+#homeScoutLinks li { margin: 20px 0 20px 0 }
+#homeScoutLinks a { color: #B9282D }
+#homeScoutLinks a:hover { background-color: #791A1E; text-decoration: none; color: #FEDC6E}
+
+#homeFactsWrapper { margin-top: 20px }
+
+/**************************************/
+/*              HEADER                */
+/**************************************/
+#mastheadWrapper { width: 100% !important }
+#mastheadBanner {background-color: #FEDC6E; margin: 5px 0 5px 0; border-bottom: solid 2px #735940; border-top: solid 2px #735940 }
+#masthead { background-color: #FEDC6E; padding: 1em 0 1em }
+#masthead img { vertical-align:bottom }
+#mastTitle {font-size: 250%; font-weight: bold; margin-top: 5px}
+
+/**************************************/
+/*             NAVIGATION             */
+/**************************************/
+
+/**************************************/
+/*            MAIN CONTENT            */
+/**************************************/
+.achieveBlock .achieveTitleWrapper {border-bottom: solid 1px #ddd; margin-bottom: 5px}
+.achieveBlock .achieveTitle { font-size: 130%; font-weight: bold;}
+
+/**************************************/
+/*               FOOTER               */
+/**************************************/
+#footerWrapper { background-color: #E4C663;	width: 100% !important; padding: 30px 0 100px 0 }
+#footer { background-color: #E4C663; color: #33281D; padding: 1em 0 2em }
+#footer .header { text-transform: uppercase; font-weight: bold; padding-bottom: 10px }
+#footer img { vertical-align:middle }
+#footer ul { list-style: none }
+#footer li { margin: 0 0 10px -10px }
+
+#footer a:link { text-decoration: none; color: #33281D; } 
+#footer a:visited { text-decoration: none; color: #7F6448; } 
+#footer a:hover { text-decoration: none; color: #fff; background-color: #735940; }
+#footer a:active, a:focus { text-decoration: none; color: #000; }
+
+/* for Internet Explorer 6 */
+/*\*/
+* html #footer li {margin: 0 0 -1.5em 0 !important; position: relative;}
+
+/**************************************/
+/*               TABS                 */
+/**************************************/
+#tabWrapper {border-bottom: solid 1px #B9282D; height: 50px; padding-left: 5px; margin-bottom: 10px; clear:both;}
+#tabs { font-weight:bold; }
+#tabs a{ background:#B9282D; color:#fff; border:1px solid #B9282D; font-size:120%; display: block; float: left; line-height:32px; height: 33px; margin:16px 12px 0 0; padding:0 11px 0 11px; text-decoration:none;}
+#tabs a:hover{ background:#fff; color: black; border:1px solid #B9282D; border-bottom-color:#fff; line-height:32px; margin-top:16px;}
+#tabs a.nowactive{ background:#fff; border:1px solid #B9282D; border-bottom-color:#fff; color:black; font-size:140%; height:33px; line-height:32px; margin-top:16px; padding:0 11px 0 11px;}

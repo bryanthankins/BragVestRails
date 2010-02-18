@@ -1,0 +1,104 @@
+ 
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+ 
+<head> 
+    <title> 
+   <%= @rank.name %>
+ - BragVest</title>    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
+    <meta name="language" content="en" />  
+    <meta name="description" content="Cub Scout achievement guide." />  
+    <meta name="keywords" content="cub, scout, achievement, badges, ranks, tiger, wolf, bear, webelos, webelos1, webelos2" />  
+    <link rel="favicon" href="/images/images/favicon.ico"/> 
+    <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection" /> 
+    <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" /> 
+    <!--[if IE]>
+        <link rel="stylesheet" href="/content/ie.css" type="text/css" media="screen, projection" />
+    <![endif]--> 
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen, projection" />    
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>  
+    <script type="text/javascript"> 
+    //<![CDATA[
+        google.load("jquery", "1.3.2");
+    //]]> 
+    </script> 
+ 
+        
+ 
+</head> 
+<body>    
+    
+<div id="mastheadWrapper"> 
+    <div id="mastheadBanner"> 
+        <div id="masthead" class="container">            
+            <div class="span-3"> 
+                <a href="/"><img src="/images/logo.png" alt="Home" /></a> 
+            </div> 
+            <div class="span-21 last"> 
+                <div>Cub Scout Achievements</div> 
+                <div id="mastTitle"> 
+                     <%= @rank.name %>            
+                </div> 
+            </div>            
+        </div> 
+    </div> 
+</div> 
+    
+    <div id="navigation" class="container">        
+    </div> 
+    <%=yield%>
+
+    
+    <div id="footerWrapper"> 
+        <div id="footer" class="container"> 
+            <div class="span-8 prefix-1"> 
+                <div class="header"> 
+                    Bragging Socially
+                </div> 
+                <div> 
+                    <a href="http://twitter.com/bragvest"><img src="/images/social/twitter.png" alt="" /><span>Follow us on Twitter</span></a> 
+                </div>                
+            </div> 
+            <div class="span-8 suffix-7 last"> 
+                <div class="header"> 
+                    Cub Scout Ranks
+                </div> 
+                <div> 
+                   <ul> 
+		                       <% for rank in @ranks %>
+
+	                            <li><%= link_to rank.name, rank.name %></li> 
+
+	                         
+								<% end %>
+
+	                    </ul> 
+
+                </div> 
+            </div> 
+            <div class="span-8 prefix-1"> 
+                &copy; 2009 bragvest.com
+            </div> 
+            <div class="span-14 suffix-1 last"> 
+                BragVest.com is not associated with or endorsed by the <a href="http://www.scouting.org/">Boy Scouts of America</a>.
+            </div> 
+        </div> 
+    </div> 
+    <script type="text/javascript"> 
+    //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    //]]> 
+    </script> 
+    <script type="text/javascript"> 
+    //<![CDATA[
+        try {
+            var pageTracker = _gat._getTracker("UA-9006604-1");
+            pageTracker._trackPageview();
+        } catch (err) { }
+    //]]> 
+    </script>    
+</body> 
+</html>
