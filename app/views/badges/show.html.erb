@@ -3,9 +3,8 @@
     <div id="tabWrapper">        
         <div id="tabs">            
          
-				<% for badge in @badges %>
-				<!--	<%= link_to badge.name, rank_badge_path(badge.rank, badge) %> -->
-				<%= link_to_unless_current(badge.name, rank_badge_path(badge.rank, badge)) {link_to badge.name, {:action => "badges", :id => badge}, :class =>
+				<% for badge in @badges %>				
+				<%= link_to_unless_current(badge.name, rank_badge_path(badge.rank, badge)) {link_to badge.name, rank_badge_path(badge.rank, badge), :class =>
 "nowactive" } %>
 				<% end %>
 				
