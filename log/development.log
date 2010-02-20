@@ -7217,3 +7217,1495 @@ Rendering badges/show
   [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
   [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
 Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 15:58:57) [GET]
+  [4;36;1mRank Load (47.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 843ms (View: 609, DB: 47) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 15:59:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 156ms (View: 94, DB: 0) | 200 OK [http://localhost/ranks/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 15:59:08) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 234ms (View: 187, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 15:59:09) [GET]
+  Parameters: {"id"=>"2", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 2 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 2) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 4) [0m
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/1/badges/2]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 15:59:10) [GET]
+  Parameters: {"id"=>"3", "rank_id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 3 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 3) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 5) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/1/badges/3]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 15:59:11) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 15:59:14) [GET]
+  Parameters: {"id"=>"2", "rank_id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (15.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 2 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 2) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 4) [0m
+Completed in 47ms (View: 16, DB: 15) | 200 OK [http://localhost/ranks/1/badges/2]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 15:59:15) [GET]
+  Parameters: {"id"=>"3", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (16.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 3 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 3) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 5) [0m
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/ranks/1/badges/3]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 15:59:17) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 15:59:23) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 15:59:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mAchievement Load (16.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+Completed in 156ms (View: 93, DB: 16) | 200 OK [http://localhost/ranks/2]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 15:59:26) [GET]
+  Parameters: {"id"=>"4", "rank_id"=>"2"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/2/badges/4]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 15:59:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+
+NoMethodError (undefined method `achievements' for nil:NilClass):
+  app/controllers/ranks_controller.rb:21:in `show'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:14:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/3]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:14:21) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 6) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 7) [0m
+Completed in 93ms (View: 62, DB: 0) | 200 OK [http://localhost/ranks/4]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:14:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 156ms (View: 109, DB: 0) | 200 OK [http://localhost/ranks/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:14:47) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:14:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:14:51) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:16:56) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:16:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/3]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:17:00) [GET]
+  Parameters: {"id"=>"5", "rank_id"=>"3"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 5 AND ("badges".rank_id = 3)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/3/badges/5]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:18:01) [GET]
+  Parameters: {"id"=>"5", "rank_id"=>"3"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 5 AND ("badges".rank_id = 3)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 156ms (View: 141, DB: 0) | 200 OK [http://localhost/ranks/3/badges/5]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:18:02) [GET]
+  Parameters: {"id"=>"5", "rank_id"=>"3"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 5 AND ("badges".rank_id = 3)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/3/badges/5]
+
+
+Processing BadgesController#badges (for 127.0.0.1 at 2010-02-19 16:18:04) [GET]
+  Parameters: {"id"=>"5"}
+
+ActionController::UnknownAction (No action responded to badges. Actions: index and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:18:08) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:18:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/3]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:18:12) [GET]
+  Parameters: {"id"=>"5", "rank_id"=>"3"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 5 AND ("badges".rank_id = 3)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/3/badges/5]
+
+
+Processing BadgesController#badges (for 127.0.0.1 at 2010-02-19 16:18:13) [GET]
+  Parameters: {"id"=>"5"}
+
+ActionController::UnknownAction (No action responded to badges. Actions: index and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:19:18) [GET]
+  Parameters: {"id"=>"5", "rank_id"=>"3"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 5 AND ("badges".rank_id = 3)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/ranks/3/badges/5]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:19:39) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:19:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/ranks/2]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:19:42) [GET]
+  [4;35;1mRank Load (16.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:19:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/3]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:19:44) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:19:45) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 6) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 7) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/4]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:19:46) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:21:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/3]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:21:14) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:21:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 6) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 7) [0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/ranks/4]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:21:16) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:21:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/2]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:22:05) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:22:09) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+Rendering template within layouts/ranks
+Rendering ranks/show
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/2]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:22:11) [GET]
+  Parameters: {"id"=>"4", "rank_id"=>"2"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/ranks/2/badges/4]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:22:51) [GET]
+  Parameters: {"id"=>"4", "rank_id"=>"2"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/ranks/2/badges/4]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:23:39) [GET]
+  Parameters: {"id"=>"4", "rank_id"=>"2"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (16.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 8) [0m
+Completed in 125ms (View: 15, DB: 16) | 200 OK [http://localhost/ranks/2/badges/4]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:24:46) [GET]
+  Parameters: {"id"=>"4", "rank_id"=>"2"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 8) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/2/badges/4]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:30:48) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:30:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (16.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+
+NoMethodError (undefined method `rank_badge' for #<RanksController:0x4810e80>):
+  app/controllers/ranks_controller.rb:21:in `show'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:32:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1/badges/1
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/ranks_controller.rb:24:in `show'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:32:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1/badges/1
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/ranks/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:32:19) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:32:22) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:32:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+Redirected to http://localhost:3000/ranks/2/badges/4
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/ranks/2]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:32:24) [GET]
+  Parameters: {"id"=>"4", "rank_id"=>"2"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 8) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/2/badges/4]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:32:26) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:32:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1/badges/1
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+Completed in 47ms (DB: 0) | 302 Found [http://localhost/ranks/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:32:27) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:33:25) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:33:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1/badges/1
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/ranks/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:33:26) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:33:28) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:34:49) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:34:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1/badges/1
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/ranks/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:34:50) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 141ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:34:52) [GET]
+  Parameters: {"id"=>"2", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 2 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 2) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 4) [0m
+Completed in 62ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/1/badges/2]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:35:38) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:35:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1/badges/1
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/ranks/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:35:41) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:36:28) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:36:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1/badges/1
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/ranks/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:36:29) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:36:31) [GET]
+  Parameters: {"id"=>"2", "rank_id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 2 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 2) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 4) [0m
+Completed in 172ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/1/badges/2]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:36:32) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:54:35) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:54:37) [GET]
+  Parameters: {"id"=>"1", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (15.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 62ms (View: 15, DB: 15) | 200 OK [http://localhost/ranks/1/badges/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:54:39) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 16:54:40) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 16:54:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+Redirected to http://localhost:3000/ranks/2/badges/4
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/ranks/2]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 16:54:48) [GET]
+  Parameters: {"id"=>"4", "rank_id"=>"2"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 8) [0m
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/ranks/2/badges/4]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCREATE TABLE "achievements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "badge_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE "badges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "rank_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "ranks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "isElective" boolean, "created_at" datetime, "updated_at" datetime, "achievement_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214040722')[0m
+  [4;35;1mSQL (109.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100212200943')[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214032831')[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100214032845')[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214032852')[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100214040545')[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214040636')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE "achievements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "badge_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "badges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "rank_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE "ranks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "isElective" boolean, "created_at" datetime, "updated_at" datetime, "achievement_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (296.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214040722')[0m
+  [4;35;1mSQL (110.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100212200943')[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214032831')[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100214032845')[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214032852')[0m
+  [4;35;1mSQL (109.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100214040545')[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214040636')[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 21:20:44) [GET]
+  [4;36;1mRank Load (16.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 375ms (View: 234, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 21:24:18) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 21:24:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1/badges/1-tiger-cub
+Completed in 47ms (DB: 0) | 302 Found [http://localhost/ranks/1]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:24:20) [GET]
+  Parameters: {"id"=>"1-tiger-cub", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (16.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 157ms (View: 125, DB: 16) | 200 OK [http://localhost/ranks/1/badges/1-tiger-cub]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:24:30) [GET]
+  Parameters: {"id"=>"2-bobcat", "rank_id"=>"1"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 2 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 2) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 4) [0m
+Completed in 63ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/1/badges/2-bobcat]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:24:33) [GET]
+  Parameters: {"id"=>"3-immediate-recognition", "rank_id"=>"1"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 3 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 3) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 5) [0m
+Completed in 125ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/1/badges/3-immediate-recognition]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 21:24:46) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 21:24:50) [GET]
+  Parameters: {"id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1-tiger/badges/1-tiger-cub
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/ranks/1-tiger]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:24:50) [GET]
+  Parameters: {"id"=>"1-tiger-cub", "rank_id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (15.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 62ms (View: 31, DB: 15) | 200 OK [http://localhost/ranks/1-tiger/badges/1-tiger-cub]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:24:52) [GET]
+  Parameters: {"id"=>"2-bobcat", "rank_id"=>"1-tiger"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 2 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 2) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 4) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/1-tiger/badges/2-bobcat]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:24:55) [GET]
+  Parameters: {"id"=>"3-immediate-recognition", "rank_id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 3 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 3) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 5) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/ranks/1-tiger/badges/3-immediate-recognition]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 21:24:59) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 21:25:00) [GET]
+  Parameters: {"id"=>"3-bear"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+Redirected to http://localhost:3000/ranks/3-bear/badges/5-bear-badge
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/ranks/3-bear]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:25:00) [GET]
+  Parameters: {"id"=>"5-bear-badge", "rank_id"=>"3-bear"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 5 AND ("badges".rank_id = 3)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 157ms (View: 32, DB: 0) | 200 OK [http://localhost/ranks/3-bear/badges/5-bear-badge]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 21:25:11) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 21:44:28) [GET]
+  Parameters: {"id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1-tiger/badges/1-tiger-cub
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/ranks/1-tiger]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:44:28) [GET]
+  Parameters: {"id"=>"1-tiger-cub", "rank_id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (15.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 78ms (View: 16, DB: 15) | 200 OK [http://localhost/ranks/1-tiger/badges/1-tiger-cub]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:44:31) [GET]
+  Parameters: {"id"=>"2-bobcat", "rank_id"=>"1-tiger"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 2 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 2) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 4) [0m
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/ranks/1-tiger/badges/2-bobcat]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:44:32) [GET]
+  Parameters: {"id"=>"3-immediate-recognition", "rank_id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 3 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 3) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 5) [0m
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/ranks/1-tiger/badges/3-immediate-recognition]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:44:34) [GET]
+  Parameters: {"id"=>"1-tiger-cub", "rank_id"=>"1-tiger"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 171ms (View: 109, DB: 0) | 200 OK [http://localhost/ranks/1-tiger/badges/1-tiger-cub]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-19 21:44:35) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 21:44:37) [GET]
+  Parameters: {"id"=>"2-wolf"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+Redirected to http://localhost:3000/ranks/2-wolf/badges/4-wolf-badge
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/ranks/2-wolf]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:44:37) [GET]
+  Parameters: {"id"=>"4-wolf-badge", "rank_id"=>"2-wolf"}
+  [4;35;1mRank Load (16.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 8) [0m
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/ranks/2-wolf/badges/4-wolf-badge]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:44:38) [GET]
+  Parameters: {"id"=>"Wolf", "rank_id"=>"2-wolf"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 0 AND ("badges".rank_id = 2)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Badge with ID=Wolf AND ("badges".rank_id = 2)):
+  app/controllers/badges_controller.rb:9:in `show'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:47:26) [GET]
+  Parameters: {"id"=>"4-wolf-badge", "rank_id"=>"2-wolf"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (16.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 8) [0m
+Completed in 125ms (View: 93, DB: 16) | 200 OK [http://localhost/ranks/2-wolf/badges/4-wolf-badge]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 21:47:29) [GET]
+  Parameters: {"id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1-tiger/badges/1-tiger-cub
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/ranks/1-tiger]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:47:29) [GET]
+  Parameters: {"id"=>"1-tiger-cub", "rank_id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (16.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+Completed in 63ms (View: 31, DB: 16) | 200 OK [http://localhost/ranks/1-tiger/badges/1-tiger-cub]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 21:47:30) [GET]
+  Parameters: {"id"=>"2-wolf"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+Redirected to http://localhost:3000/ranks/2-wolf/badges/4-wolf-badge
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/ranks/2-wolf]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:47:30) [GET]
+  Parameters: {"id"=>"4-wolf-badge", "rank_id"=>"2-wolf"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 4 AND ("badges".rank_id = 2)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 2) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 4) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 8) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/ranks/2-wolf/badges/4-wolf-badge]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 21:47:32) [GET]
+  Parameters: {"id"=>"3-bear"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+Redirected to http://localhost:3000/ranks/3-bear/badges/5-bear-badge
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/ranks/3-bear]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:47:32) [GET]
+  Parameters: {"id"=>"5-bear-badge", "rank_id"=>"3-bear"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 5 AND ("badges".rank_id = 3)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 3) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 3) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 5) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 6) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/ranks/3-bear/badges/5-bear-badge]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-02-19 21:47:34) [GET]
+  Parameters: {"id"=>"4-webelos"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+Redirected to http://localhost:3000/ranks/4-webelos/badges/6-webelos-badge
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/ranks/4-webelos]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-02-19 21:47:34) [GET]
+  Parameters: {"id"=>"6-webelos-badge", "rank_id"=>"4-webelos"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 6 AND ("badges".rank_id = 4)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 4) [0m
+Rendering template within layouts/badges
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 4) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 6) [0m
+  [4;35;1mTask Load (15.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 7) [0m
+Completed in 156ms (View: 110, DB: 15) | 200 OK [http://localhost/ranks/4-webelos/badges/6-webelos-badge]

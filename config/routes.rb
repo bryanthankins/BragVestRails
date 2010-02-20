@@ -43,6 +43,7 @@ ActionController::Routing::Routes.draw do |map|
   #map.connect 'ranks/:name', :controller => 'ranks', :action => 'show'
   #map.connect 'ranks/:name/badges/:name', :controller => 'ranks', :action => 'show'
   map.resources :ranks, :has_many => :badges
+ 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   map.root :controller=>"home"

@@ -11,7 +11,7 @@
     <meta name="language" content="en" />  
     <meta name="description" content="Cub Scout achievement guide." />  
     <meta name="keywords" content="cub, scout, achievement, badges, ranks, tiger, wolf, bear, webelos, webelos1, webelos2" />  
-    <link rel="favicon" href="/images/images/favicon.ico"/> 
+    <link rel="favicon" href="/images/favicon.ico"/> 
     <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection" /> 
     <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" /> 
     <!--[if IE]>
@@ -67,10 +67,11 @@
                 </div> 
                 <div> 
                    <ul> 
-		                       <% for rank in @ranks %>
+		                      <% for rank in @ranks %>
 
-	                            <li><%= link_to rank.name, rank.name %></li> 
-
+	                          
+	                          
+									<li><%= link_to rank.name, rank %></li>
 	                         
 								<% end %>
 

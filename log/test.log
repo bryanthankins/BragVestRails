@@ -52,3 +52,38 @@ Processing RanksController#update (for 0.0.0.0 at 2010-02-15 22:48:45) [PUT]
   [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 980190962) [0m
 Redirected to http://test.host/ranks/980190962
 Completed in 0ms (DB: 0) | 302 Found [http://test.host/ranks/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "ranks" [0m
+
+
+Processing RanksController#create (for 0.0.0.0 at 2010-02-19 16:58:44) [POST]
+  Parameters: {"rank"=>{}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "ranks" [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 980190962) [0m
+
+
+Processing RanksController#destroy (for 0.0.0.0 at 2010-02-19 16:58:44) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 980190962) [0m
+
+
+Processing RanksController#edit (for 0.0.0.0 at 2010-02-19 16:58:44) [GET]
+  Parameters: {"id"=>"980190962"}
+
+
+Processing RanksController#index (for 0.0.0.0 at 2010-02-19 16:58:44) [GET]
+
+
+Processing RanksController#new (for 0.0.0.0 at 2010-02-19 16:58:44) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 980190962) [0m
+
+
+Processing RanksController#show (for 0.0.0.0 at 2010-02-19 16:58:44) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 980190962) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 980190962) LIMIT 1[0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 980190962) [0m
+
+
+Processing RanksController#update (for 0.0.0.0 at 2010-02-19 16:58:44) [PUT]
+  Parameters: {"rank"=>{}, "id"=>"980190962"}
