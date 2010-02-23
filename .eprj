@@ -4,6 +4,10 @@
     <dict>
         <key>fileTriggers</key>
         <dict>
+            <key>env</key>
+            <string>config\environment.rb</string>
+            <key>envi</key>
+            <string>config\environment.rb</string>
             <key>home</key>
             <string>app\controllers\home_controller.rb</string>
             <key>ind</key>
@@ -20,6 +24,8 @@
             <string>config\routes.rb</string>
             <key>routes</key>
             <string>config\routes.rb</string>
+            <key>sess</key>
+            <string>app\controllers\sessions_controller.rb</string>
         </dict>
     </dict>
 </plist>

@@ -1,5 +1,5 @@
 class RanksController < ApplicationController
-  
+  #before_filter :login_required
   # GET /ranks/Tiger
   # GET /ranks/1.xml
   def show    
