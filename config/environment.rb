@@ -40,6 +40,7 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 	config.after_initialize do # so rake gems:install works
-   		RPXNow.api_key = 'dc1ea8b9232b1554a78a99321ebc1f9086df08e7'
+			RPXNow.api_key =  'bcc2de236838231be15aad6d81751f1cc63e642a'
+			RPXNow.api_version = 2
   	end
 end

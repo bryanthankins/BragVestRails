@@ -46,8 +46,8 @@ ActionController::Routing::Routes.draw do |map|
  
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-  #map.root :controller=>"home"
-    map.root :controller => :users
+  map.root :controller=>"home"
+  #  map.root :controller => :users
  # map.resource :session
   map.resources :users
   #map.resources :ranks

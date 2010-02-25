@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all
-  protect_from_forgery
+  #protect_from_forgery
 
   protected
 
@@ -16,6 +16,8 @@ class ApplicationController < ActionController::Base
     session[:user_id] = user.try(:id)
     @current_user = user
   end
+  
+  
   
   def login_required
     if session[:user_id]. nil?    	
