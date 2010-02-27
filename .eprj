@@ -22,6 +22,8 @@
             <string>app\controllers\ranks_controller.rb</string>
             <key>ranks</key>
             <string>app\views\layouts\ranks.html.erb</string>
+            <key>ro</key>
+            <string>config\routes.rb</string>
             <key>rou</key>
             <string>config\routes.rb</string>
             <key>rout</key>

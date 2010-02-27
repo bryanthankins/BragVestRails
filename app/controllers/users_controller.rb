@@ -54,6 +54,19 @@ def create
   end
 end
 
+ def save_tasks
+ 	logger.debug "made it here!"
+ 	@user = self.current_user #User.find(params[:id])
+    @task = Task.find(params[:task])
+  if params[:show] == "true"
+    @user.tasks << @task
+  else
+    @user.tasks.delete(@task)
+  end
+  @user.save!
+  render :nothing => true
+ end
+
   def destroy
     self.current_user = nil
     redirect_to :action => :new

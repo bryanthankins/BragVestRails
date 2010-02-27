@@ -31,6 +31,11 @@
  
         </div> 
         
+        
+        
+       
+
+ 
 
         
        <%for task in achievement.tasks%>
@@ -42,7 +47,11 @@
             <div class="span-23 last"> 
                 
          		<% if current_user %>
-  					Insert Checkbox 
+  					<%=check_box_tag task.id, 1, current_user.completed_task?(task), 
+		  :onclick => remote_function(
+		  :url =>  {:controller=> "users", :action => "save_tasks"}, #save_tasks_user_path(current_user), 
+		  :with => "'task=#{task.id}&amp;show=' + this.checked", 
+		  :method => :post) %> <%=task.description%>
 				<% else %>
 			  		<p><%=task.description%></p> 
 				<% end %>
@@ -50,7 +59,7 @@
         </div> 
         <%end%>
         	
-     
+   
         
    
     </div> 

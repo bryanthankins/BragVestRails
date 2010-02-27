@@ -3,4 +3,7 @@ class User < ActiveRecord::Base
   def to_s
     name
   end
+  def completed_task?(task)
+    tasks.include?(task)
+  end
 end
