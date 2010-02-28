@@ -89,3 +89,4 @@ a:hover { color: #B9282D }
 /*				LOGIN				  */
 /**************************************/
 #login {width:955px;margin: 0 auto;}
+#strikethru {text-decoration:line-through;}

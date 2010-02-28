@@ -1,1 +1,5 @@
 page.visual_effect(:highlight, 'task' + @task.id.to_s + 'text', :duration => 1.0)
+#page.send :record, "Element.addClassName('task' + @task.id.to_s + 'text', 'strikethru')"
+#page.call 'Element.addClassName', 'task' + @task.id.to_s + 'text', 'strikethru'
+#page << "$('task' + @task.id.to_s + 'text').addClassName('strikethru');"
+#page << "$('task' + @task.id.to_s + 'text').addClass('strikethru');"
