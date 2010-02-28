@@ -32,7 +32,11 @@
                 <div id="homeScoutLinks" class="span-9 prefix-3 last"> 
                     Cub Scout Ranks
 						<%=yield%>
-						<%= render 'layouts/user' %>
+						<% if current_user %>
+  Hello <%= current_user %>, <%= link_to 'logout',{:action => :destroy, :controller => :users} %>
+<% else %>
+  Hi scouter, please <%= link_to 'login!', new_user_path %>
+<% end %>
 	                </div>
             </div> 
         </div> 
@@ -55,17 +59,7 @@
                        </div>                   
                     </div> 
                     <div class="span-14 last" style="margin-top: 30px"> 
-                        <div> 
-                            <b>HOW?</b> 
-                        </div> 
-                        <form id="interested" method="post" action="">                        
-                            <div> 
-                                We are putting the finishing touches on the BragVest site. Once it's ready, we'll let you know! 
-                            </div> 
-                            <div> 
-                                Email: <input type="text" name="email" /> <input type="submit" name="emailSubmit" value="I'm interested!" /> 
-                            </div>    
-                        </form> 
+                       
                                             
                     </div> 
                 </div> 
