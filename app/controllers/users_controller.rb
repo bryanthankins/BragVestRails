@@ -64,7 +64,12 @@ end
     @user.tasks.delete(@task)
   end
   @user.save!
-  render :nothing => true
+  #render :nothing => true
+  #render :partial => 'save_tasks'
+   respond_to do |format|
+      format.html # show.html.erb
+      format.js  #{ render :xml => @rank }
+    end
  end
 
   def destroy
