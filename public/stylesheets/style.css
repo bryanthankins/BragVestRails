@@ -88,5 +88,6 @@ a:hover { color: #B9282D }
 /**************************************/
 /*				LOGIN				  */
 /**************************************/
-#login {width:955px;margin: 0 auto;}
+/*#login {width:955px;margin: 0 auto;font-size: 185%;}*/
+#login {font-size: 185%;}
 #strikethru {text-decoration:line-through;}
