@@ -4,6 +4,10 @@
     <dict>
         <key>fileTriggers</key>
         <dict>
+            <key>.css</key>
+            <string>public\stylesheets\style.css</string>
+            <key>Situation</key>
+            <string>..\..\..\..\..\projects\CIMCO\Code\MercTrunk\Mercury\SituationTicket.aspx.vb</string>
             <key>badg</key>
             <string>app\models\badge.rb</string>
             <key>e</key>
@@ -18,6 +22,8 @@
             <string>app\controllers\home_controller.rb</string>
             <key>ind</key>
             <string>app\views\home\index.html.erb</string>
+            <key>product</key>
+            <string>..\..\..\..\..\projects\CIMCO\Code\MercTrunk\Mercury\ProductOrder.aspx</string>
             <key>rank</key>
             <string>app\controllers\ranks_controller.rb</string>
             <key>ranks</key>
@@ -32,8 +38,18 @@
             <string>config\routes.rb</string>
             <key>routes</key>
             <string>config\routes.rb</string>
+            <key>sch</key>
+            <string>db\schema.rb</string>
+            <key>schema</key>
+            <string>db\schema.rb</string>
+            <key>screen</key>
+            <string>public\stylesheets\screen.css</string>
+            <key>screen.</key>
+            <string>public\stylesheets\screen.css</string>
             <key>sess</key>
             <string>app\controllers\sessions_controller.rb</string>
+            <key>style</key>
+            <string>public\stylesheets\style.css</string>
             <key>tas</key>
             <string>app\models\task.rb</string>
             <key>task</key>
