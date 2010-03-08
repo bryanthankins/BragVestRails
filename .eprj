@@ -10,6 +10,8 @@
             <string>..\..\..\..\..\projects\CIMCO\Code\MercTrunk\Mercury\SituationTicket.aspx.vb</string>
             <key>badg</key>
             <string>app\models\badge.rb</string>
+            <key>data</key>
+            <string>config\database.yml</string>
             <key>e</key>
             <string>config\environment.rb</string>
             <key>en</key>
