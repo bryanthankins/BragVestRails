@@ -36569,3 +36569,68 @@ Processing UsersController#new (for 127.0.0.1 at 2010-03-10 12:12:55) [GET]
 Rendering template within layouts/application
 Rendering users/new
 Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (218.0ms)[0m   [0;1mCREATE TABLE "achievements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "badge_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE "badges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "rank_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE "ranks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (172.0ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "isElective" boolean, "created_at" datetime, "updated_at" datetime, "achievement_id" integer, "phoneTask_id" integer, "name" varchar(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE "tasks_users" ("task_id" integer, "user_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "password" varchar(255), "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "identifier" varchar(255)) [0m
+  [4;35;1mSQL (16.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (171.0ms)[0m   [0;1mCREATE TABLE "users_tasks" ("user_id" integer, "task_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (125.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (140.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100304032049')[0m
+  [4;35;1mSQL (110.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100212200943')[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214032831')[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100214032845')[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214032852')[0m
+  [4;35;1mSQL (328.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100214040545')[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100214040636')[0m
+  [4;35;1mSQL (125.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100214040722')[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100220211102')[0m
+  [4;35;1mSQL (110.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100221135042')[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100226041822')[0m
+  [4;35;1mSQL (156.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100227174721')[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100304031613')[0m
