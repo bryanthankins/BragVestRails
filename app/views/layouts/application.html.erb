@@ -34,7 +34,23 @@
 
 </head> 
 <body>    
-    
+	
+    <script type="text/javascript">
+if (typeof Meebo == 'undefined') {
+Meebo=function(){(Meebo._=Meebo._||[]).push(arguments)};
+(function(q){
+	var args = arguments;
+	if (!document.body) { return setTimeout(function(){ args.callee.apply(this, args) }, 100); }
+	var d=document, b=d.body, m=b.insertBefore(d.createElement('div'), b.firstChild), s=d.createElement('script');
+	m.id='meebo'; m.style.display='none'; m.innerHTML='<iframe id="meebo-iframe"></iframe>';
+	s.src='http'+(q.https?'s':'')+'://'+(q.stage?'stage-':'')+'cim.meebo.com/cim/cim.php?network='+q.network;
+	b.insertBefore(s, b.firstChild);
+
+})({network:'bragvest_xo37ti'});
+Meebo('makeEverythingSharable');
+}
+</script>
+
 <div id="mastheadWrapper"> 
     <div id="mastheadBanner"> 
         <div id="masthead" class="container">            
@@ -133,6 +149,11 @@ function _loadUserVoice() {
 }
 _loadSuper = window.onload;
 window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice(); };
-</script>  
+</script> 
+
+<script type="text/javascript">
+ 	Meebo("domReady");
+</script> 
+
 </body> 
 </html>
