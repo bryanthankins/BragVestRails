@@ -50,7 +50,9 @@ Meebo('makeEverythingSharable');
 						<% if current_user %>
   Hello <%= current_user %>, <%= link_to 'logout',{:action => :destroy, :controller => :users} %>
 <% else %>
-  Hi scouter, please <%= link_to 'login!', new_user_path %>
+ <div id="nohover">
+<%= link_to image_tag("getstarted.png"), new_user_path, :id => 'nohover'  %>
+</div>
 <% end %>
 	                </div>
             </div> 

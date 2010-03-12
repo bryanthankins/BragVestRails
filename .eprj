@@ -52,6 +52,8 @@
             <string>app\controllers\sessions_controller.rb</string>
             <key>style</key>
             <string>public\stylesheets\style.css</string>
+            <key>styles</key>
+            <string>public\stylesheets\style.css</string>
             <key>tas</key>
             <string>app\models\task.rb</string>
             <key>task</key>

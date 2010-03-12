@@ -85,7 +85,9 @@ a:hover { color: #B9282D }
 #tabs a{ background:#B9282D; color:#fff; border:1px solid #B9282D; font-size:120%; display: block; float: left; line-height:32px; height: 33px; margin:16px 12px 0 0; padding:0 11px 0 11px; text-decoration:none;}
 #tabs a:hover{ background:#fff; color: black; border:1px solid #B9282D; border-bottom-color:#fff; line-height:32px; margin-top:16px;}
 #tabs a.nowactive{ background:#fff; border:1px solid #B9282D; border-bottom-color:#fff; color:black; font-size:140%; height:33px; line-height:32px; margin-top:16px; padding:0 11px 0 11px;}
-
+#nohover { background-color: transparent; text-decoration: none;}
+#nohover a:nowactive{ background-color: transparent; text-decoration: none;}
+#nohover a:hover{ background-color: transparent; text-decoration: none;}
 /**************************************/
 /*				LOGIN				  */
 /**************************************/
