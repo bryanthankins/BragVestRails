@@ -45,10 +45,17 @@ Meebo('makeEverythingSharable');
                     </div> 
                 </div> 
                 <div id="homeScoutLinks" class="span-9 prefix-3 last"> 
-                    Cub Scout Ranks
+                	<%if current_user%>
+                	Hello <%= current_user %>, <br /><br />
+                	Choose a Rank:
+                	<%else%>
+                	Cub Scout Ranks
+                	<%end%>
+                    
 						<%=yield%>
+						
 						<% if current_user %>
-  Hello <%= current_user %>, <%= link_to 'logout',{:action => :destroy, :controller => :users} %>
+   If you're done, <%= link_to 'logout',{:action => :destroy, :controller => :users} %>
 <% else %>
  <div id="nohover">
 <%= link_to image_tag("GetStarted.png"), new_user_path, :id => 'nohover'  %>
