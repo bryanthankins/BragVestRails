@@ -51,7 +51,7 @@ ActionController::Routing::Routes.draw do |map|
  # map.resource :session
 
   map.resources :users, :member => { :save_tasks => :post }
-  #map.resources :ranks
+  
 
   
 end

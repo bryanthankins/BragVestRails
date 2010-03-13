@@ -462,3 +462,62 @@ Processing RanksController#show (for 0.0.0.0 at 2010-03-10 12:15:54) [GET]
   [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
 Redirected to http://test.host/ranks/1-tiger/badges/1-tiger-badge
 Completed in 16ms (DB: 0) | 302 Found [http://test.host/ranks/1-tiger]
+  [4;36;1mAchievement Create (0.0ms)[0m   [0;1mINSERT INTO "achievements" ("name", "updated_at", "badge_id", "description", "created_at") VALUES('test', '2010-03-13 20:03:41', NULL, NULL, '2010-03-13 20:03:41')[0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements"."id" = 2) [0m
+  [4;36;1mAchievement Update (0.0ms)[0m   [0;1mUPDATE "achievements" SET "name" = 'test2', "updated_at" = '2010-03-13 20:03:41' WHERE "id" = 2[0m
+  [4;35;1mAchievement Destroy (0.0ms)[0m   [0mDELETE FROM "achievements" WHERE "id" = 2[0m
+  [4;36;1mBadge Create (0.0ms)[0m   [0;1mINSERT INTO "badges" ("name", "updated_at", "description", "rank_id", "created_at") VALUES('test', '2010-03-13 20:03:41', NULL, NULL, '2010-03-13 20:03:41')[0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 2) [0m
+  [4;36;1mBadge Update (0.0ms)[0m   [0;1mUPDATE "badges" SET "name" = 'test2', "updated_at" = '2010-03-13 20:03:41' WHERE "id" = 2[0m
+  [4;35;1mBadge Destroy (0.0ms)[0m   [0mDELETE FROM "badges" WHERE "id" = 2[0m
+  [4;36;1mRank Create (15.0ms)[0m   [0;1mINSERT INTO "ranks" ("name", "updated_at", "created_at") VALUES('test', '2010-03-13 20:03:41', '2010-03-13 20:03:41')[0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 2) [0m
+  [4;36;1mRank Update (0.0ms)[0m   [0;1mUPDATE "ranks" SET "name" = 'test2', "updated_at" = '2010-03-13 20:03:41' WHERE "id" = 2[0m
+  [4;35;1mRank Destroy (0.0ms)[0m   [0mDELETE FROM "ranks" WHERE "id" = 2[0m
+  [4;36;1mTask Create (0.0ms)[0m   [0;1mINSERT INTO "tasks" ("name", "updated_at", "achievement_id", "description", "phoneTask_id", "isElective", "created_at") VALUES('test', '2010-03-13 20:03:41', NULL, NULL, NULL, NULL, '2010-03-13 20:03:41')[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mTask Update (0.0ms)[0m   [0;1mUPDATE "tasks" SET "name" = 'test2', "updated_at" = '2010-03-13 20:03:41' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" INNER JOIN "tasks_users" ON "users".id = "tasks_users".user_id WHERE ("tasks_users".task_id = 1 ) [0m
+  [4;36;1mTask Destroy (0.0ms)[0m   [0;1mDELETE FROM "tasks" WHERE "id" = 1[0m
+  [4;35;1mUser Create (16.0ms)[0m   [0mINSERT INTO "users" ("name", "updated_at", "login", "password", "identifier", "email", "created_at") VALUES('test', '2010-03-13 20:03:41', NULL, NULL, NULL, NULL, '2010-03-13 20:03:41')[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980190963) [0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "name" = 'test2', "updated_at" = '2010-03-13 20:03:41' WHERE "id" = 980190963[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks_users".user_id = 980190963 ) [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 980190963[0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+
+
+Processing BadgesController#show (for 0.0.0.0 at 2010-03-13 14:03:50) [GET]
+  Parameters: {"id"=>"1-tiger-badge", "rank_id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/application
+Rendering badges/show
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mAchievement Load (0.0ms)[0m   [0mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://test.host/ranks/1-tiger/badges/1-tiger-badge]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-03-13 14:03:50) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/home]
+  [4;35;1mRank Load (16.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+
+
+Processing RanksController#show (for 0.0.0.0 at 2010-03-13 14:03:50) [GET]
+  Parameters: {"id"=>"1-tiger"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://test.host/ranks/1-tiger/badges/1-tiger-badge
+Completed in 0ms (DB: 16) | 302 Found [http://test.host/ranks/1-tiger]

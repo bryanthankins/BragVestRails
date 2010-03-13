@@ -56,9 +56,10 @@
 		  :onclick => remote_function(
 		  :url =>  {:controller=> "users", :action => "save_tasks"}, #save_tasks_user_path(current_user), 
 		  :with => "'task=#{task.id}&amp;show=' + this.checked", 
-		  :method => :post) %>    <span id="task<%=task.id.to_s%>text"> <%=task.name%></span> </p>
+		  :method => :post) %>    <span id="task<%=task.id.to_s%>text"><%=task.name%></span> </p> <blockquote><%=task.description%></blockquote>
 				<% else %>
 			  		<p><%=task.name%></p> 
+			  		<blockquote><%=task.description%></blockquote>
 				<% end %>
             </div>            
         </div> 

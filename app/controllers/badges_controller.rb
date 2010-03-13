@@ -16,5 +16,7 @@ class BadgesController < ApplicationController
       format.xml  { render :xml => @rank }
     end
   end
+  
+
 
 end

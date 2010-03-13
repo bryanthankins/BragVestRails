@@ -26,6 +26,8 @@
             <string>app\views\home\index.html.erb</string>
             <key>product</key>
             <string>..\..\..\..\..\projects\CIMCO\Code\MercTrunk\Mercury\ProductOrder.aspx</string>
+            <key>r</key>
+            <string>config\routes.rb</string>
             <key>rank</key>
             <string>app\controllers\ranks_controller.rb</string>
             <key>ranks</key>
@@ -44,12 +46,18 @@
             <string>db\schema.rb</string>
             <key>schema</key>
             <string>db\schema.rb</string>
+            <key>scre</key>
+            <string>public\stylesheets\screen.css</string>
             <key>screen</key>
             <string>public\stylesheets\screen.css</string>
             <key>screen.</key>
             <string>public\stylesheets\screen.css</string>
             <key>sess</key>
             <string>app\controllers\sessions_controller.rb</string>
+            <key>sty</key>
+            <string>public\stylesheets\style.css</string>
+            <key>styl</key>
+            <string>public\stylesheets\style.css</string>
             <key>style</key>
             <string>public\stylesheets\style.css</string>
             <key>styles</key>

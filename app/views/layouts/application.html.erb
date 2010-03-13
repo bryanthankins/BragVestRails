@@ -57,7 +57,7 @@ Meebo('makeEverythingSharable');
             <div class="span-3"> 
                 <a href="/"><img src="/images/logo.png" alt="Home" /></a> 
             </div> 
-            <div class="span-21 last"> 
+            <div class="span-19"> 
                 <div>Cub Scout Achievements</div> 
                 <div id="mastTitle"> 
                      <%if @rank.nil?%>
@@ -66,7 +66,15 @@ Meebo('makeEverythingSharable');
    <%= @rank.name %>
    <%end%>            
                 </div> 
-            </div>            
+            </div>
+            <div class="span-2 last">
+            						<% if current_user %>
+   <%= link_to 'Logout',{:action => :destroy, :controller => :users} %>
+<% else %>
+ 
+<%= link_to 'Login', new_user_path  %>
+
+<% end %>            
         </div> 
     </div> 
 </div> 
@@ -83,7 +91,10 @@ Meebo('makeEverythingSharable');
                     Bragging Socially
                 </div> 
                 <div> 
-                    <a href="http://twitter.com/bragvest"><img src="/images/social/twitter.png" alt="" /><span>Follow us on Twitter</span></a> 
+                	<ul>
+                    <li><a href="http://twitter.com/bragvest"><img src="/images/social/twitter.png" alt="" /><span>Follow us on Twitter</span></a> </li>
+                    <li><a href="http://www.facebook.com/pages/BragVest/346142438428?ref=ts"><img src="/images/social/facebook.png" alt="" /><span>Follow us on Facebook</span></a></li>
+                    </ul>
                 </div>                
             </div> 
             <div class="span-8 suffix-7 last"> 
