@@ -48,11 +48,19 @@ Meebo('makeEverythingSharable');
                 	<%if current_user%>
                 	Hello <%= current_user %>, <br /><br />
                 	Choose a Rank:
+                		<%=yield%>
                 	<%else%>
-                	Cub Scout Ranks
+                	BragVest lets you:
+                	<span id="fireList">
+                		<ul>
+                			<li>View tasks for each rank</li>
+                			<li>Check-off tasks when complete</li>
+                			<li>See tasks on your phone</li>
+                		</ul>
+                		</span>
                 	<%end%>
                     
-						<%=yield%>
+						
 						
 						<% if current_user %>
    If you're done, <%= link_to 'logout',{:action => :destroy, :controller => :users} %>
@@ -89,19 +97,17 @@ Meebo('makeEverythingSharable');
                 </div> 
                 <div class="span-9 prefix-1 last"> 
                     <div> 
-                        <b>FREE BragVest iPhone App!</b> 
+                        <b>BragVest iPhone App!</b> 
                     </div> 
                     <div class="span-4"> 
-                        <img src="/images/iphone.gif" alt="BragVest iPhone App" /> 
+                         <img src="/images/iphone.gif" alt="BragVest iPhone App" /> 
                     </div> 
                     <div class="span-5 last" style="margin-top: 20px"> 
                         <p> 
-                            Track cub scout achievements on your iPhone! <strong>FREE!</strong> 
+                            Track cub scout achievements on your iPhone.<br />
+                            <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=362029581&mt=8">Get it now!</a> 
                         </p> 
-                        <p> 
-                            <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=327006143&mt=8">Get the app now</a> 
-                            (will open iTunes) or search the Apple iTunes App Store for "bragvest" or "cub scout".
-                        </p>                        
+                        
                     </div> 
                 </div>                
             </div> 

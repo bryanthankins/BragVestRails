@@ -31,12 +31,14 @@ a:hover { color: #B9282D }
 #homeContent { background-color: #FEDC6E; padding: 1em 0 2em }
 
 #homeScoutLinks { font-size: 200% }
-#homeScoutLinks ul { list-style: none }
+/*#homeScoutLinks ul { list-style: none } */
 #homeScoutLinks li { margin: 20px 0 20px 0 }
 #homeScoutLinks a { color: #B9282D }
 #homeScoutLinks a:hover { background-color: #791A1E; text-decoration: none; color: #FEDC6E}
 
 #homeFactsWrapper { margin-top: 20px }
+
+#fireList { font-size: 80%; list-style:none inside url("/images/flameColor.png"); }
 
 /**************************************/
 /*              HEADER                */

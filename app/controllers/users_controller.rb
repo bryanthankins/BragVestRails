@@ -74,6 +74,6 @@ end
 
   def destroy
     self.current_user = nil
-    redirect_to :action => :new
+    redirect_to '/'
   end
 end
