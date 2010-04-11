@@ -19,48 +19,54 @@ class UsersController < ApplicationController
 
   # Handle the redirect with the token from RPX
 def create
-		@ranks = Rank.all
-  u = URI.parse('https://rpxnow.com/api/v2/auth_info')
-  req = Net::HTTP::Post.new(u.path)
-  req.set_form_data({'token' => params[:token],
-                      'apiKey' => 'bcc2de236838231be15aad6d81751f1cc63e642a',  # <-- your RPX api key here.
-                      'format' => 'json'})
-
-  http = Net::HTTP.new(u.host,u.port)
-  http.use_ssl = true if u.scheme == 'https'
-  res = http.request(req)
-
-  json_resp = res.body
-  json = JSON.parse(json_resp)
-
-  if json['stat'] == 'ok'
-    unique_identifier = json['profile']['identifier']
-    username = json['profile']['preferredUsername']
-    nickname = json['profile']['displayName'] if nickname.nil?
-    email = json['profile']['email']
-    photo_url = json['profile']['photo']
-
- 
-
-    # implement your own do_success method which signs the user in
-    # to your website
-    #do_success(unique_identifier,email,nickname,photo_url)
-    data = {:name => username, :email => email, :identifier => unique_identifier}
-  self.current_user = User.find_by_identifier(data[:identifier]) || User.create!(data)
-      redirect_to '/'
-  else
-    flash[:notice] = 'Log in failed'
-    redirect_to '/'
-  end
+	
+		  @ranks = Rank.all
+		  u = URI.parse('https://rpxnow.com/api/v2/auth_info')
+		  req = Net::HTTP::Post.new(u.path)
+		  req.set_form_data({'token' => params[:token],
+		                      'apiKey' => 'bcc2de236838231be15aad6d81751f1cc63e642a',  # <-- your RPX api key here.
+		                      'format' => 'json'})
+		
+		  http = Net::HTTP.new(u.host,u.port)
+		  http.use_ssl = true if u.scheme == 'https'
+		  res = http.request(req)
+		
+		  json_resp = res.body
+		  json = JSON.parse(json_resp)
+		
+		  if json['stat'] == 'ok'
+		    unique_identifier = json['profile']['identifier']
+		    username = json['profile']['preferredUsername']
+		    nickname = json['profile']['displayName'] if nickname.nil?
+		    email = json['profile']['email']
+		    photo_url = json['profile']['photo']
+		
+		 
+		
+		    # implement your own do_success method which signs the user in
+		    # to your website
+		    #do_success(unique_identifier,email,nickname,photo_url)
+		    data = {:name => username, :email => email, :identifier => unique_identifier}
+		  self.current_user = User.find_by_identifier(data[:identifier]) || User.create!(data)
+		      redirect_to '/'
+		  else
+		    flash[:notice] = 'Log in failed'
+		    redirect_to '/'
+		  end
+  
 end
 
  def process_login
+ 	logger.debug "enter process_login"
       if user = User.authenticate(params[:user])
+      	logger.debug "user exists"
         session[:id] = user.id # Remember the user's id during this session 
+        self.current_user = user
         redirect_to session[:return_to] || '/'
       else
+      	logger.debug "user does not exist"
         flash[:error] = 'Invalid login.' 
-        redirect_to :action => 'login', :username => params[:user][:username]
+        redirect_to :action => 'new', :username => params[:user][:username]
       end
     end 
 

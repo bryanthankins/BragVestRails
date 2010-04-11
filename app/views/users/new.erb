@@ -12,15 +12,16 @@
 		OR		
 	</div>
 	<div class="span-7 last"> 
-  	
+  	<% if flash[:message] %><div class="info"><%= flash[:message] %></div><% end %>
+  <% if flash[:error] %><div class="error"><%= flash[:error] %></div><% end %> 
 
-  <% form_for :user, @user, :url => { :action => "create" } do |f| %>
-   Username: <%= f.text_field :username %>
+  <% form_for :user, @user, :url => { :action => "process_login" } do |f| %>
+   Username: <%= f.text_field :name %>
     Password: <%= f.password_field :password %>
-    <%= submit_tag 'Login' %> 
+    <%= submit_tag 'Login'%> 
     <%=link_to "Forgot your password?", new_user_path, :class=> "small" %>
   <% end %> 
-	<span class="small">Don't have an account? <%=link_to "Sign Up", new_user_path%></span>
+	<span class="small">Don't have an account? <%=link_to "Sign Up", new_account_path%></span>
  
 	</div>
 </div>

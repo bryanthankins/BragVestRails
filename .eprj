@@ -8,10 +8,20 @@
             <string>public\stylesheets\style.css</string>
             <key>Situation</key>
             <string>..\..\..\..\..\projects\CIMCO\Code\MercTrunk\Mercury\SituationTicket.aspx.vb</string>
+            <key>accou</key>
+            <string>app\controllers\account_controller.rb</string>
+            <key>acou</key>
+            <string>app\controllers\account_controller.rb</string>
             <key>badg</key>
             <string>app\models\badge.rb</string>
+            <key>cont</key>
+            <string>app\controllers\badges_controller.rb</string>
             <key>data</key>
             <string>config\database.yml</string>
+            <key>deve</key>
+            <string>log\development.log</string>
+            <key>devel</key>
+            <string>log\development.log</string>
             <key>e</key>
             <string>config\environment.rb</string>
             <key>en</key>
@@ -24,11 +34,17 @@
             <string>app\controllers\home_controller.rb</string>
             <key>ind</key>
             <string>app\views\home\index.html.erb</string>
+            <key>new</key>
+            <string>app\views\account\new.erb</string>
+            <key>new.e</key>
+            <string>app\views\users\new.erb</string>
             <key>product</key>
             <string>..\..\..\..\..\projects\CIMCO\Code\MercTrunk\Mercury\ProductOrder.aspx</string>
             <key>r</key>
             <string>config\routes.rb</string>
             <key>rank</key>
+            <string>app\controllers\ranks_controller.rb</string>
+            <key>rank_con</key>
             <string>app\controllers\ranks_controller.rb</string>
             <key>ranks</key>
             <string>app\views\layouts\ranks.html.erb</string>
@@ -42,6 +58,8 @@
             <string>config\routes.rb</string>
             <key>routes</key>
             <string>config\routes.rb</string>
+            <key>sc</key>
+            <string>db\schema.rb</string>
             <key>sch</key>
             <string>db\schema.rb</string>
             <key>sche</key>
@@ -56,6 +74,8 @@
             <string>public\stylesheets\screen.css</string>
             <key>sess</key>
             <string>app\controllers\sessions_controller.rb</string>
+            <key>shem</key>
+            <string>db\schema.rb</string>
             <key>sty</key>
             <string>public\stylesheets\style.css</string>
             <key>styl</key>
@@ -69,9 +89,15 @@
             <key>task</key>
             <string>app\models\task.rb</string>
             <key>us</key>
-            <string>app\models\user.rb</string>
+            <string>app\controllers\users_controller.rb</string>
             <key>user</key>
             <string>app\models\user.rb</string>
+            <key>user.</key>
+            <string>app\models\user.rb</string>
+            <key>user_con</key>
+            <string>app\controllers\users_controller.rb</string>
+            <key>users</key>
+            <string>app\controllers\users_controller.rb</string>
         </dict>
     </dict>
 </plist>

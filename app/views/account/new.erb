@@ -1,0 +1,20 @@
+  <div id="login" class="container">
+	<div class="span-5 ">
+		To get started, just create an account.
+	</div>  	
+	<div class="span-7 last"> 
+  	<% if flash[:message] %><div class="info"><%= flash[:message] %></div><% end %>
+  <% if flash[:error] %><div class="error"><%= flash[:error] %></div><% end %> 
+
+  <% form_for :user, @user, :url => { :action => "create" } do |f| %>
+    <%= f.error_messages %>
+   	Email: <%= f.text_field :email %>
+    Password: <%= f.password_field :password %>    
+    Confirm Password: <%= f.password_field :password_confirmation %> 
+    <%= submit_tag 'Sign Up'%>     
+  <% end %> 
+	
+ 
+	</div>
+</div>
+

@@ -43433,3 +43433,1667 @@ ActionController::RoutingError (No route matches "/content/ie.css" with {:method
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 08:52:03) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 08:53:15) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-11 08:53:15) [GET]
+
+ActionController::RoutingError (No route matches "/content/ie.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-11 08:53:27) [POST]
+  Parameters: {"user"=>{"username"=>"", "password"=>""}, "commit"=>"Login"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Redirected to http://localhost:3000/
+Completed in 484ms (DB: 0) | 302 Found [http://localhost/users/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 08:53:27) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 08:53:37) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-11 08:53:37) [GET]
+
+ActionController::RoutingError (No route matches "/content/ie.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 08:54:11) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-11 08:54:11) [GET]
+
+ActionController::RoutingError (No route matches "/content/ie.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 08:54:48) [GET]
+  [4;35;1mRank Load (16.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-11 08:54:48) [GET]
+
+ActionController::RoutingError (No route matches "/content/ie.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 08:54:53) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-11 08:54:53) [GET]
+
+ActionController::RoutingError (No route matches "/content/ie.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-11 08:54:58) [POST]
+  Parameters: {"user"=>{"username"=>"", "password"=>""}, "commit"=>"Login"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Redirected to http://localhost:3000/
+Completed in 718ms (DB: 0) | 302 Found [http://localhost/users/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 08:54:59) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 08:55:01) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-11 08:55:02) [GET]
+
+ActionController::RoutingError (No route matches "/content/ie.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 08:55:25) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 08:55:27) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-11 08:55:31) [POST]
+  Parameters: {"user"=>{"username"=>"", "password"=>""}, "commit"=>"Login"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Redirected to http://localhost:3000/
+Completed in 438ms (DB: 0) | 302 Found [http://localhost/users/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 08:55:32) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-11 09:00:38) [POST]
+  Parameters: {"user"=>{"username"=>"", "password"=>""}, "commit"=>"Login"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Redirected to http://localhost:3000/
+Completed in 453ms (DB: 0) | 302 Found [http://localhost/users/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 09:00:38) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-11 09:01:41) [POST]
+  Parameters: {"user"=>{"username"=>"a", "password"=>"a"}, "commit"=>"Login"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Redirected to http://localhost:3000/
+Completed in 454ms (DB: 0) | 302 Found [http://localhost/users/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 09:01:41) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 09:02:16) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 109ms (View: 109, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-11 09:02:19) [POST]
+  Parameters: {"user"=>{"username"=>"a", "password"=>"a"}, "commit"=>"Login"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Redirected to http://localhost:3000/
+Completed in 453ms (DB: 0) | 302 Found [http://localhost/users/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 09:02:19) [GET]
+  [4;35;1mRank Load (16.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 0, DB: 31) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 09:04:15) [GET]
+  [4;36;1mRank Load (16.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #15 of app/views/users/new.erb:
+12: 		OR		
+13: 	</div>
+14: 	<div class="span-7 last"> 
+15:   	<% if @flash[:message] %><div><%= @flash[:message] %></div><% end %>
+16:   <% if @flash[:error] %><div><%= @flash[:error] %></div><% end %> 
+17: 
+18:   <% form_for :user, @user, :url => { :action => "create" } do |f| %>
+
+    app/views/users/new.erb:15
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 09:07:45) [GET]
+  [4;35;1mRank Load (15.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 125ms (View: 94, DB: 15) | 200 OK [http://localhost/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-11 09:07:45) [GET]
+
+ActionController::RoutingError (No route matches "/content/ie.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-11 09:07:48) [POST]
+  Parameters: {"user"=>{"username"=>"", "password"=>""}, "commit"=>"Login"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Redirected to http://localhost:3000/
+Completed in 453ms (DB: 0) | 302 Found [http://localhost/users/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 09:07:49) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 09:09:12) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 09:09:14) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-11 09:09:15) [POST]
+  Parameters: {"user"=>{"username"=>"", "password"=>""}, "commit"=>"Login"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Redirected to http://localhost:3000/
+Completed in 438ms (DB: 0) | 302 Found [http://localhost/users/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 09:09:16) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 09:14:44) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#process_login (for 127.0.0.1 at 2010-04-11 09:14:46) [POST]
+  Parameters: {"user"=>{"username"=>"", "password"=>""}, "commit"=>"Login"}
+enter process_login
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `find_by_username_and_password' for #<Class:0x47fb648>):
+  app/models/user.rb:13:in `authenticate'
+  app/controllers/users_controller.rb:59:in `process_login'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#process_login (for 127.0.0.1 at 2010-04-11 09:15:48) [POST]
+  Parameters: {"user"=>{"username"=>"", "password"=>""}, "commit"=>"Login"}
+enter process_login
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."password" = '' AND "users"."login" = '') LIMIT 1[0m
+user does not exist
+Redirected to http://localhost:3000/users/new?username=
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/users/process_login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 09:15:48) [GET]
+  Parameters: {"username"=>""}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/new?username=]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 09:16:20) [GET]
+  Parameters: {"username"=>""}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 140ms (View: 125, DB: 0) | 200 OK [http://localhost/users/new?username=]
+
+
+Processing UsersController#process_login (for 127.0.0.1 at 2010-04-11 09:16:23) [POST]
+  Parameters: {"user"=>{"username"=>"", "password"=>""}, "commit"=>"Login"}
+enter process_login
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = '' AND "users"."login" = '') LIMIT 1[0m
+user does not exist
+Redirected to http://localhost:3000/users/new?username=
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/users/process_login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 09:16:23) [GET]
+  Parameters: {"username"=>""}
+  [4;35;1mRank Load (16.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 16) | 200 OK [http://localhost/users/new?username=]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 14:42:39) [GET]
+  Parameters: {"username"=>""}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/users/new?username=]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 14:42:42) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 14:42:45) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 14:43:05) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined local variable or method `new_account_path' for #<ActionView::Base:0x48ab23c>) on line #24 of app/views/users/new.erb:
+21:     <%= submit_tag 'Login'%> 
+22:     <%=link_to "Forgot your password?", new_user_path, :class=> "small" %>
+23:   <% end %> 
+24: 	<span class="small">Don't have an account? <%=link_to "Sign Up", new_account_path%></span>
+25:  
+26: 	</div>
+27: </div>
+
+    app/views/users/new.erb:24
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 14:43:29) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 14:43:32) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+ERROR: compiling _run_erb_app47views47account47new46erb RAISED compile error
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:9: syntax error, unexpected ':', expecting '}'
+...> { :controller => "account" :action => "create" } do |f| ; ...
+                              ^
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:9: syntax error, unexpected '}', expecting kEND
+...account" :action => "create" } do |f| ; @output_buffer.conca...
+                              ^
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:20: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47account47new46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "  <div id=\"login\" class=\"container\">\n"
+@output_buffer.concat "\t<div class=\"span-5 \">\n"
+@output_buffer.concat "\t\tTo get started, just create an account.\n"
+@output_buffer.concat "\t</div>  \t\n"
+@output_buffer.concat "\t<div class=\"span-19 last\"> \n"
+@output_buffer.concat "  \t";  if flash[:message] ; @output_buffer.concat "<div class=\"info\">"; @output_buffer.concat(( flash[:message] ).to_s); @output_buffer.concat "</div>";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  if flash[:error] ; @output_buffer.concat "<div class=\"error\">"; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "</div>";  end ; @output_buffer.concat " \n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  ";  form_for :user, @user, :url => { :controller => "account" :action => "create" } do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "   \tEmail: "; @output_buffer.concat(( f.text_field :username ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    Password: "; @output_buffer.concat(( f.password_field :password ).to_s); @output_buffer.concat "    \n"
+@output_buffer.concat "    "; @output_buffer.concat(( submit_tag 'Sign Up').to_s); @output_buffer.concat "     \n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat " \n"
+@output_buffer.concat "\t\n"
+@output_buffer.concat " \n"
+@output_buffer.concat "\t</div>\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:20:in `compile!'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:9: syntax error, unexpected ':', expecting '}'
+...> { :controller => "account" :action => "create" } do |f| ; ...
+                              ^
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:9: syntax error, unexpected '}', expecting kEND
+...account" :action => "create" } do |f| ; @output_buffer.conca...
+                              ^
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:20: syntax error, unexpected kENSURE, expecting $end) on line #9 of app/views/account/new.erb:
+6:   	<% if flash[:message] %><div class="info"><%= flash[:message] %></div><% end %>
+7:   <% if flash[:error] %><div class="error"><%= flash[:error] %></div><% end %> 
+8: 
+9:   <% form_for :user, @user, :url => { :controller => "account" :action => "create" } do |f| %>
+10:    	Email: <%= f.text_field :username %>
+11:     Password: <%= f.password_field :password %>    
+12:     <%= submit_tag 'Sign Up'%>     
+
+    app/views/account/new.erb:20:in `compile!'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 16:48:54) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 188ms (View: 172, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 16:48:57) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 16:49:22) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+ERROR: compiling _run_erb_app47views47account47new46erb RAISED compile error
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:9: syntax error, unexpected ':', expecting '}'
+...> { :controller => "account" :action => "create" } do |f| ; ...
+                              ^
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:9: syntax error, unexpected '}', expecting kEND
+...account" :action => "create" } do |f| ; @output_buffer.conca...
+                              ^
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:20: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47account47new46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "  <div id=\"login\" class=\"container\">\n"
+@output_buffer.concat "\t<div class=\"span-5 \">\n"
+@output_buffer.concat "\t\tTo get started, just create an account.\n"
+@output_buffer.concat "\t</div>  \t\n"
+@output_buffer.concat "\t<div class=\"span-19 last\"> \n"
+@output_buffer.concat "  \t";  if flash[:message] ; @output_buffer.concat "<div class=\"info\">"; @output_buffer.concat(( flash[:message] ).to_s); @output_buffer.concat "</div>";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  if flash[:error] ; @output_buffer.concat "<div class=\"error\">"; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "</div>";  end ; @output_buffer.concat " \n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  ";  form_for :user, @user, :url => { :controller => "account" :action => "create" } do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "   \tEmail: "; @output_buffer.concat(( f.text_field :username ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    Password: "; @output_buffer.concat(( f.password_field :password ).to_s); @output_buffer.concat "    \n"
+@output_buffer.concat "    "; @output_buffer.concat(( submit_tag 'Sign Up').to_s); @output_buffer.concat "     \n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat " \n"
+@output_buffer.concat "\t\n"
+@output_buffer.concat " \n"
+@output_buffer.concat "\t</div>\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:20:in `compile!'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:9: syntax error, unexpected ':', expecting '}'
+...> { :controller => "account" :action => "create" } do |f| ; ...
+                              ^
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:9: syntax error, unexpected '}', expecting kEND
+...account" :action => "create" } do |f| ; @output_buffer.conca...
+                              ^
+C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/views/account/new.erb:20: syntax error, unexpected kENSURE, expecting $end) on line #9 of app/views/account/new.erb:
+6:   	<% if flash[:message] %><div class="info"><%= flash[:message] %></div><% end %>
+7:   <% if flash[:error] %><div class="error"><%= flash[:error] %></div><% end %> 
+8: 
+9:   <% form_for :user, @user, :url => { :controller => "account" :action => "create" } do |f| %>
+10:    	Email: <%= f.text_field :username %>
+11:     Password: <%= f.password_field :password %>    
+12:     <%= submit_tag 'Sign Up'%>     
+
+    app/views/account/new.erb:20:in `compile!'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 16:50:09) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 16:54:04) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 16:54:08) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 16:54:18) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 109ms (View: 16, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 16:54:27) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 16:54:55) [GET]
+  [4;35;1mRank Load (16.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 16) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:03:02) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:03:11) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"123", "username"=>"test@test.com", "password"=>"abc"}, "commit"=>"Sign Up"}
+
+ActionView::MissingTemplate (Missing template account/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 17:13:48) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:13:50) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:13:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+
+ActionView::MissingTemplate (Missing template account/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-04-11 17:17:56) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+
+SyntaxError (C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/controllers/account_controller.rb:16: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:18:56) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:18:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (31.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank, Email can't be blank):
+  app/controllers/account_controller.rb:5:in `create'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:20:35) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank, Email can't be blank):
+  app/controllers/account_controller.rb:5:in `create'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:22:47) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"123", "username"=>"test@test.com", "password"=>"abc"}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank, Password is too short (minimum is 6 characters), Email can't be blank):
+  app/controllers/account_controller.rb:5:in `create'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:23:25) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"123", "username"=>"test@test.com", "password"=>"abc"}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank, Password is too short (minimum is 6 characters), Email can't be blank):
+  app/controllers/account_controller.rb:5:in `create'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:23:28) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:23:30) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank, Password is too short (minimum is 6 characters), Email can't be blank):
+  app/controllers/account_controller.rb:5:in `create'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:31:04) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (63.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ArgumentError (too few arguments):
+  app/controllers/account_controller.rb:13:in `format'
+  app/controllers/account_controller.rb:13:in `create'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-04-11 17:31:43) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+
+SyntaxError (C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/controllers/account_controller.rb:13: syntax error, unexpected ':', expecting '}'
+...nder :controller=> "account" :action => "new" }    	
+                              ^):
+  
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:31:52) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ArgumentError (too few arguments):
+  app/controllers/account_controller.rb:13:in `format'
+  app/controllers/account_controller.rb:13:in `create'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:32:33) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ArgumentError (too few arguments):
+  app/controllers/account_controller.rb:10:in `format'
+  app/controllers/account_controller.rb:10:in `create'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:33:32) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/account/new
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:33:32) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:33:35) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/account/new
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:33:35) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:33:38) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/account/new
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:33:38) [GET]
+  [4;36;1mRank Load (15.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 15) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:35:53) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:35:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/account/new
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:35:55) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:39:01) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:39:03) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/account/new
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:39:03) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:42:56) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/account/new
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:42:56) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+
+ActionView::TemplateError (can't convert nil into String) on line #7 of app/views/account/new.erb:
+4: 	</div>  	
+5: 	<div class="span-7 last"> 
+6:   	<% if flash[:message] %><div class="info"><%= flash[:message] %></div><% end %>
+7:   <% if flash[:error] %><div class="error"><%= flash[:error] %></div><% end %> 
+8: 
+9:   <% form_for :user, :url => { :action => "create" } do |f| %>
+10:     <%= f.error_messages %>
+
+    app/views/account/new.erb:7
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:43:02) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:43:04) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/account/new
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:43:04) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:45:33) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template account/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:45:38) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template account/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:46:11) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+
+ActionView::TemplateError (undefined method `username' for #<User:0x45f98b8>) on line #11 of app/views/account/new.erb:
+8: 
+9:   <% form_for :user, :url => { :action => "create" } do |f| %>
+10:     <%= f.error_messages %>
+11:    	Email: <%= f.text_field :username %>
+12:     Password: <%= f.password_field :password %>    
+13:     Confirm Password: <%= f.password_field :password_confirmation %> 
+14:     <%= submit_tag 'Sign Up'%>     
+
+    app/views/account/new.erb:11
+    app/views/account/new.erb:9
+    app/controllers/account_controller.rb:15:in `create'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:46:53) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+
+ActionView::TemplateError (undefined method `username' for #<User:0x478c48c>) on line #11 of app/views/account/new.erb:
+8: 
+9:   <% form_for :user, @user, :url => { :action => "create" } do |f| %>
+10:     <%= f.error_messages %>
+11:    	Email: <%= f.text_field :username %>
+12:     Password: <%= f.password_field :password %>    
+13:     Confirm Password: <%= f.password_field :password_confirmation %> 
+14:     <%= submit_tag 'Sign Up'%>     
+
+    app/views/account/new.erb:11
+    app/views/account/new.erb:9
+    app/controllers/account_controller.rb:15:in `create'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:47:08) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #106 of app/views/layouts/application.html.erb:
+103:                 </div> 
+104:                 <div> 
+105:                    <ul> 
+106: 		                      <% for rank in @ranks %>
+107: 
+108: 	                          
+109: 	                          
+
+    app/views/layouts/application.html.erb:106
+    app/controllers/account_controller.rb:15:in `create'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:47:47) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:54:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:55:18) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "username"=>"", "password"=>""}, "commit"=>"Sign Up"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:55:21) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:55:42) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "login"=>"bryanthankins@hotmail.com"}, "commit"=>"Sign Up"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:56:02) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "login"=>"test@readywise.com"}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:59:12) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 17:59:18) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 17:59:19) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 17:59:21) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 17:59:29) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "login"=>"test@readywise.com"}, "commit"=>"Sign Up"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:02:44) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "login"=>"test@readywise.com"}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:02:57) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1233", "password"=>"abc1234", "login"=>"test@readywise.com"}, "commit"=>"Sign Up"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:04:38) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1233", "password"=>"abc1234", "login"=>"test@readywise.com"}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 63ms (View: 16, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:04:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1233", "password"=>"abc1234", "email"=>"test@readywise.com"}, "commit"=>"Sign Up"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test@readywise.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:04:57) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test@readywise.com"}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test@readywise.com') LIMIT 1[0m
+  [4;36;1mUser Create (110.0ms)[0m   [0;1mINSERT INTO "users" ("name", "updated_at", "login", "password", "identifier", "email", "created_at") VALUES(NULL, '2010-04-11 23:04:57', NULL, 'abc1234', NULL, 'test@readywise.com', '2010-04-11 23:04:57')[0m
+Redirected to http://localhost:3000/account/new
+Completed in 281ms (DB: 110) | 302 Found [http://localhost/account/create]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 18:04:57) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:07:03) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test22@readywise.com"}, "commit"=>"Sign Up"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test22@readywise.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("name", "updated_at", "login", "password", "identifier", "email", "created_at") VALUES(NULL, '2010-04-11 23:07:03', NULL, 'abc1234', NULL, 'test22@readywise.com', '2010-04-11 23:07:03')[0m
+Redirected to http://localhost:3000/
+Completed in 188ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 18:07:03) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #49 of app/views/layouts/home.html.erb:
+46:                 </div> 
+47:                 <div id="homeScoutLinks" class="span-9 prefix-3 last"> 
+48:                 	<%if current_user%>
+49:                 	Hello <%= current_user %>, <br /><br />
+50:                 	Choose a Rank:
+51:                 		<%=yield%>
+52:                 	<%else%>
+
+    app/views/layouts/home.html.erb:49
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-04-11 18:08:53) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test22@readywise.com"}, "commit"=>"Sign Up"}
+
+SyntaxError (C:/Documents and Settings/bhankins/My Documents/My Dropbox/BragVestRails/app/controllers/account_controller.rb:8: syntax error, unexpected tIVAR, expecting kEND
+    		session[:user_id] @user.id  		
+    		                       ^):
+  
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:09:08) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test22@readywise.com"}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (109.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test22@readywise.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 6) LIMIT 1[0m
+Completed in 141ms (View: 16, DB: 109) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:09:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test23@readywise.com"}, "commit"=>"Sign Up"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test23@readywise.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("name", "updated_at", "login", "password", "identifier", "email", "created_at") VALUES(NULL, '2010-04-11 23:09:13', NULL, 'abc1234', NULL, 'test23@readywise.com', '2010-04-11 23:09:13')[0m
+Redirected to http://localhost:3000/
+Completed in 437ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 18:09:13) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #49 of app/views/layouts/home.html.erb:
+46:                 </div> 
+47:                 <div id="homeScoutLinks" class="span-9 prefix-3 last"> 
+48:                 	<%if current_user%>
+49:                 	Hello <%= current_user %>, <br /><br />
+50:                 	Choose a Rank:
+51:                 		<%=yield%>
+52:                 	<%else%>
+
+    app/views/layouts/home.html.erb:49
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:11:20) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test23@readywise.com"}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test23@readywise.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) LIMIT 1[0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:11:25) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test24@readywise.com"}, "commit"=>"Sign Up"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test24@readywise.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("name", "updated_at", "login", "password", "identifier", "email", "created_at") VALUES(NULL, '2010-04-11 23:11:25', NULL, 'abc1234', NULL, 'test24@readywise.com', '2010-04-11 23:11:25')[0m
+Redirected to http://localhost:3000/
+Completed in 250ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 18:11:25) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #49 of app/views/layouts/home.html.erb:
+46:                 </div> 
+47:                 <div id="homeScoutLinks" class="span-9 prefix-3 last"> 
+48:                 	<%if current_user%>
+49:                 	Hello <%= current_user %>, <br /><br />
+50:                 	Choose a Rank:
+51:                 		<%=yield%>
+52:                 	<%else%>
+
+    app/views/layouts/home.html.erb:49
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 18:14:01) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #49 of app/views/layouts/home.html.erb:
+46:                 </div> 
+47:                 <div id="homeScoutLinks" class="span-9 prefix-3 last"> 
+48:                 	<%if current_user%>
+49:                 	Hello <%= current_user %>, <br /><br />
+50:                 	Choose a Rank:
+51:                 		<%=yield%>
+52:                 	<%else%>
+
+    app/views/layouts/home.html.erb:49
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 18:22:16) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:22:43) [POST]
+  Parameters: {"user"=>{"name"=>"bob", "password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test26@readywise.com"}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test26@readywise.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "updated_at", "login", "password", "identifier", "email", "created_at") VALUES('bob', '2010-04-11 23:22:43', NULL, 'abc1234', NULL, 'test26@readywise.com', '2010-04-11 23:22:43')[0m
+Redirected to http://localhost:3000/
+Completed in 172ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 18:22:43) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) LIMIT 1[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-04-11 18:23:37) [GET]
+  Parameters: {"id"=>"1-tiger"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1-tiger/badges/1-bobcat-badge--do-all-
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/ranks/1-tiger]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-04-11 18:23:37) [GET]
+  Parameters: {"id"=>"1-bobcat-badge--do-all-", "rank_id"=>"1-tiger"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/application
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;35;1mTask Load (32.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+  [4;36;1mUser Load (32.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) LIMIT 1[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 1) AND ("tasks_users".user_id = 9 ) LIMIT 1[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 2) AND ("tasks_users".user_id = 9 ) LIMIT 1[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 3) AND ("tasks_users".user_id = 9 ) LIMIT 1[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 4) AND ("tasks_users".user_id = 9 ) LIMIT 1[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 5) AND ("tasks_users".user_id = 9 ) LIMIT 1[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 6) AND ("tasks_users".user_id = 9 ) LIMIT 1[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 7) AND ("tasks_users".user_id = 9 ) LIMIT 1[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 8) AND ("tasks_users".user_id = 9 ) LIMIT 1[0m
+Completed in 235ms (View: 92, DB: 64) | 200 OK [http://localhost/ranks/1-tiger/badges/1-bobcat-badge--do-all-]
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2010-04-11 18:23:41) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/destroy]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 18:23:41) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-11 18:23:43) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 18:26:46) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#new (for 127.0.0.1 at 2010-04-11 18:28:00) [GET]
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:28:09) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test29@readywise.com"}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test29@readywise.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering account/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/account/create]
+
+
+Processing AccountController#create (for 127.0.0.1 at 2010-04-11 18:28:33) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"abc1234", "password"=>"abc1234", "email"=>"test30@readywise.com"}, "commit"=>"Sign Up"}
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'test30@readywise.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "updated_at", "login", "password", "identifier", "email", "created_at") VALUES(NULL, '2010-04-11 23:28:33', NULL, 'abc1234', NULL, 'test30@readywise.com', '2010-04-11 23:28:33')[0m
+Redirected to http://localhost:3000/
+Completed in 266ms (DB: 0) | 302 Found [http://localhost/account/create]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-11 18:28:34) [GET]
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" [0m
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) LIMIT 1[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-11 18:28:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/icons/email.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RanksController#show (for 127.0.0.1 at 2010-04-11 18:28:53) [GET]
+  Parameters: {"id"=>"1-tiger"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+Redirected to http://localhost:3000/ranks/1-tiger/badges/1-bobcat-badge--do-all-
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/ranks/1-tiger]
+
+
+Processing BadgesController#show (for 127.0.0.1 at 2010-04-11 18:28:53) [GET]
+  Parameters: {"id"=>"1-bobcat-badge--do-all-", "rank_id"=>"1-tiger"}
+  [4;35;1mRank Load (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mRank Load (0.0ms)[0m   [0;1mSELECT * FROM "ranks" [0m
+  [4;35;1mBadge Load (0.0ms)[0m   [0mSELECT * FROM "badges" WHERE ("badges"."id" = 1 AND ("badges".rank_id = 1)) [0m
+  [4;36;1mBadge Load (0.0ms)[0m   [0;1mSELECT * FROM "badges" WHERE ("badges".rank_id = 1) [0m
+Rendering template within layouts/application
+Rendering badges/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "ranks" WHERE ("ranks"."id" = 1) [0m
+  [4;36;1mAchievement Load (0.0ms)[0m   [0;1mSELECT * FROM "achievements" WHERE ("achievements".badge_id = 1) [0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".achievement_id = 1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) LIMIT 1[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 1) AND ("tasks_users".user_id = 10 ) LIMIT 1[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 2) AND ("tasks_users".user_id = 10 ) LIMIT 1[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 3) AND ("tasks_users".user_id = 10 ) LIMIT 1[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 4) AND ("tasks_users".user_id = 10 ) LIMIT 1[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 5) AND ("tasks_users".user_id = 10 ) LIMIT 1[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 6) AND ("tasks_users".user_id = 10 ) LIMIT 1[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 7) AND ("tasks_users".user_id = 10 ) LIMIT 1[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT "tasks".id FROM "tasks" INNER JOIN "tasks_users" ON "tasks".id = "tasks_users".task_id WHERE ("tasks"."id" = 8) AND ("tasks_users".user_id = 10 ) LIMIT 1[0m
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/ranks/1-tiger/badges/1-bobcat-badge--do-all-]
