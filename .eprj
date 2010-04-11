@@ -44,6 +44,8 @@
             <string>config\routes.rb</string>
             <key>sch</key>
             <string>db\schema.rb</string>
+            <key>sche</key>
+            <string>db\schema.rb</string>
             <key>schema</key>
             <string>db\schema.rb</string>
             <key>scre</key>

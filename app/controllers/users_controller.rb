@@ -54,6 +54,18 @@ def create
   end
 end
 
+ def process_login
+      if user = User.authenticate(params[:user])
+        session[:id] = user.id # Remember the user's id during this session 
+        redirect_to session[:return_to] || '/'
+      else
+        flash[:error] = 'Invalid login.' 
+        redirect_to :action => 'login', :username => params[:user][:username]
+      end
+    end 
+
+
+
  def save_tasks
  	logger.debug "made it here!"
  	@user = self.current_user #User.find(params[:id])

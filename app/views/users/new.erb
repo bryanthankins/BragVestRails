@@ -3,10 +3,25 @@
  
   <div id="login" class="container">
 	<div class="span-5 ">
-		To get started, just login from your favorite site. <span class="highlight">No need to create an account with us!</span>
+		To get started, just login from your favorite site or create an account with us.
 	</div>
-  	<div class="span-12 last"> 
+  	<div class="span-9"> 
   		<iframe src="http://bragvest.rpxnow.com/openid/embed?token_url=<%=CGI::escape(url_for(:action => 'create', :controller => 'users', :only_path => false))%>"  scrolling="no"  frameBorder="no"  allowtransparency="true"  style="width:400px;height:240px"></iframe>   		
+	</div>	
+	<div class="prefix-1 span-2">		
+		OR		
+	</div>
+	<div class="span-7 last"> 
+  	
+
+  <% form_for :user, @user, :url => { :action => "create" } do |f| %>
+   Username: <%= f.text_field :username %>
+    Password: <%= f.password_field :password %>
+    <%= submit_tag 'Login' %> 
+    <%=link_to "Forgot your password?", new_user_path, :class=> "small" %>
+  <% end %> 
+	<span class="small">Don't have an account? <%=link_to "Sign Up", new_user_path%></span>
+ 
 	</div>
 </div>
 
