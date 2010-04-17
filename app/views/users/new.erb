@@ -16,10 +16,10 @@
   <% if flash[:error] %><div class="error"><%= flash[:error] %></div><% end %> 
 
   <% form_for :user, @user, :url => { :action => "process_login" } do |f| %>
-   Username: <%= f.text_field :name %>
+   Username: <%= f.text_field :email %>
     Password: <%= f.password_field :password %>
     <%= submit_tag 'Login'%> 
-    <%=link_to "Forgot your password?", new_user_path, :class=> "small" %>
+    <!-- <%=link_to "Forgot your password?", new_user_path, :class=> "small" %> -->
   <% end %> 
 	<span class="small">Don't have an account? <%=link_to "Sign Up", new_account_path%></span>
  

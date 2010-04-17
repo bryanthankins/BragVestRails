@@ -43,8 +43,15 @@
         	
         		
             <div class="span-1">
+            	<% if current_user%>
+					<% if current_user.completed_task?(task) %>
+					<span id="task<%=task.id.to_s%>image"><img src="/images/flameBW.png" alt="" /></span>
+					<%else%>
+					<span id="task<%=task.id.to_s%>image"><img src="/images/flameColor.png" alt="" /></span>
+					<%end%>
+            	<%else%>
             	<img src="/images/flameColor.png" alt="" />
-            	
+            	<%end%>
             	
             	
         	</div> 

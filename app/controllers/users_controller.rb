@@ -46,7 +46,9 @@ def create
 		    # implement your own do_success method which signs the user in
 		    # to your website
 		    #do_success(unique_identifier,email,nickname,photo_url)
-		    data = {:name => username, :email => email, :identifier => unique_identifier}
+		    #TODO: have to hardcode because a pw is required by the model. Figure out a better way
+		    data = {:name => username, :email => email, :identifier => unique_identifier, :password=> 'defaultsupersecret'}
+		    
 		  self.current_user = User.find_by_identifier(data[:identifier]) || User.create!(data)
 		      redirect_to '/'
 		  else
