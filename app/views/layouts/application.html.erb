@@ -23,7 +23,7 @@
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>  
     <script type="text/javascript"> 
     //<![CDATA[
-        google.load("jquery", "1.4.2");
+        google.load("jquery", "1.4.2");        
     //]]> 
     </script> 
  
@@ -73,9 +73,10 @@ Meebo('makeEverythingSharable');
 <%= link_to 'Login', new_user_path  %>
 
 <% end %>            
-        </div> 
-    </div> 
-</div> 
+            </div>
+        </div>
+    </div>
+</div>
     
     <div id="navigation" class="container">        
     </div> 
@@ -100,17 +101,11 @@ Meebo('makeEverythingSharable');
                     Cub Scout Ranks
                 </div> 
                 <div> 
-                   <ul> 
-		                      <% for rank in @ranks %>
-
-	                          
-	                          
-									<li><%= link_to rank.name, rank %></li>
-	                         
-								<% end %>
-
-	                    </ul> 
-
+                    <ul>
+                      <% for rank in @ranks %>
+                      <li><%= link_to rank.name, rank %></li>
+                      <% end %>
+                    </ul>
                 </div> 
             </div> 
             <div class="span-8 prefix-1"> 
