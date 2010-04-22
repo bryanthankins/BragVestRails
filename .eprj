@@ -18,6 +18,8 @@
             <string>app\controllers\badges_controller.rb</string>
             <key>data</key>
             <string>config\database.yml</string>
+            <key>dev</key>
+            <string>log\development.log</string>
             <key>deve</key>
             <string>log\development.log</string>
             <key>devel</key>

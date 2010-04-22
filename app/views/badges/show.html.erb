@@ -6,42 +6,19 @@
 				<% for badge in @badges %>				
 				<%= link_to_unless_current(badge.name, rank_badge_path(badge.rank, badge)) {link_to badge.name, rank_badge_path(badge.rank, badge), :class =>
 "nowactive" } %>
-				<% end %>
-				
-			
+				<% end %>			
                     
         </div>        
     </div>    
     
-    <div> 
-        
-        
-    </div>    
-    
-    
-    
-    
      <%for achievement in @achievements%>
     <div class="achieveBlock"> 
-        <div class="achieveTitleWrapper"> 
+        <div class="achieveTitleWrapper slideMe">
             <span class="achieveTitle"><%=achievement.name%></span>
-        </div> 
-        <div> 
-            
- 
-        </div> 
-        
-        
-        
-       
+        </div>
 
- 
-
-        
-       <%for task in achievement.tasks%>
-         <div class="taskBlock"> 
-        	
-        		
+        <%for task in achievement.tasks%>
+         <div class="taskBlock">        		
             <div class="span-1">
             	<% if current_user%>
 					<% if current_user.completed_task?(task) %>
