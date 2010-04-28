@@ -56,9 +56,9 @@ a:hover { color: #B9282D }
 /**************************************/
 /*            MAIN CONTENT            */
 /**************************************/
-.achieveBlock .achieveTitleWrapper {border-bottom: solid 1px #ddd; margin-bottom: 5px;}
+.achieveBlock .achieveTitleWrapper {border-bottom: solid 1px #ddd; margin-bottom: 5px; cursor: pointer}
 .achieveBlock .achieveTitle { font-size: 130%; font-weight: bold;}
-
+.achieveBlock .flip {font-size: 80%; text-transform: uppercase}
 
 /**************************************/
 /*               FOOTER               */
