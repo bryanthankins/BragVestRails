@@ -16,6 +16,8 @@
             <string>app\models\badge.rb</string>
             <key>cont</key>
             <string>app\controllers\badges_controller.rb</string>
+            <key>controller</key>
+            <string>app\controllers\badges_controller.rb</string>
             <key>data</key>
             <string>config\database.yml</string>
             <key>dev</key>
