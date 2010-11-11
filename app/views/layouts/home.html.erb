@@ -49,7 +49,7 @@ Meebo('makeEverythingSharable');
                 		<%=yield%>
                 	<%else%>
                 	BragVest lets you:
-                	<span id="fireList">
+                	<span id="checkList">
                 		<ul>
                 			<li>View tasks for each rank</li>
                 			<li>Check-off tasks when complete</li>
@@ -64,7 +64,7 @@ Meebo('makeEverythingSharable');
    If you're done, <%= link_to 'logout',{:action => :destroy, :controller => :users} %>
 <% else %>
  <div id="nohover">
-<%= link_to image_tag("GetStarted.png"), new_user_path, :id => 'nohover'  %>
+<%= link_to image_tag("GetStarted.png"),"choose.htm" , :id => 'nohover'  %>
 </div>
 <% end %>
 	                </div>
@@ -93,7 +93,7 @@ Meebo('makeEverythingSharable');
                                             
                     </div> 
                 </div> 
-                <div class="span-9 prefix-1 last"> 
+                <!-- <div class="span-9 prefix-1 last"> 
                     <div> 
                         <b>BragVest iPhone App!</b> 
                     </div> 
@@ -107,7 +107,7 @@ Meebo('makeEverythingSharable');
                         </p> 
                         
                     </div> 
-                </div>                
+                  </div> -->
             </div> 
         </div>        
     </div>    

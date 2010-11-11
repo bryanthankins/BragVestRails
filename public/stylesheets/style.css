@@ -39,6 +39,7 @@ a:hover { color: #B9282D }
 #homeFactsWrapper { margin-top: 20px }
 
 #fireList { font-size: 80%; list-style:none inside url("/images/flameColor.png"); }
+#checkList { font-size: 80%; list-style:none inside url("/images/checkmark.png"); }
 
 /**************************************/
 /*              HEADER                */
