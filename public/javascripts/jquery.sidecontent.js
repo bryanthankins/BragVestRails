@@ -194,7 +194,8 @@
 			totalPullOutHeight += parseInt($("#" + sliderId + "_pullout").height());
 			totalPullOutHeight += parseInt(config.pulloutpadding);
 			
-			var suggestedSliderHeight = totalPullOutHeight + 30;
+			var suggestedSliderHeight = totalPullOutHeight + 160;
+            //note: used to be + 30 above
 			if (suggestedSliderHeight > $("#" + sliderId).height()) {
 				$("#" + sliderId).css({
 					height: suggestedSliderHeight + "px"
