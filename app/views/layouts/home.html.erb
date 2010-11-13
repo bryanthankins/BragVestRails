@@ -9,12 +9,32 @@
     <meta name="keywords" content="cub, scout, achievement, badges, ranks, tiger, wolf, bear, webelos, webelos1, webelos2" />  
     <link rel="favicon" href="/favicon.ico"/> 
     <meta name="verify-v1" content="n9VfZO6zfmyb7TJCYbgRtAOP1AYoe8f9NjPQ3bNtSyw=" /> 
-    <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection" /> 
+    <link rel="stylesheet" href="/stylesheets/screen.css?v=2" type="text/css" media="screen, projection" /> 
     <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" /> 
     <!--[if IE]>
         <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection" />
     <![endif]--> 
     <link rel="stylesheet" href="/stylesheets/style.css?v=2" type="text/css" media="screen, projection" />        
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script> 
+  <script type="text/javascript" src="/javascripts/jquery.quovolver.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.sidecontent.js"></script>
+	
+	<!-- JavaScript Test Zone -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('blockquote').quovolver();
+$(".side").sidecontent({
+    classmodifier: "sidecontent",
+    attachto: "rightside",
+    width: "400px",
+    opacity: "1.0",
+    pulloutpadding: "5",
+    textdirection: "vertical"
+});
+  
+	});
+	</script>
 </head> 
 <body id="homeBody">       
 	    <script type="text/javascript">
@@ -55,7 +75,7 @@ Meebo('makeEverythingSharable');
                 			<li>Check-off tasks when complete</li>
                 			<li>See tasks on your phone</li>
                 		</ul>
-                		</span>
+                    </span>
                 	<%end%>
                     
 						
@@ -64,10 +84,11 @@ Meebo('makeEverythingSharable');
    If you're done, <%= link_to 'logout',{:action => :destroy, :controller => :users} %>
 <% else %>
  <div id="nohover">
-<%= link_to image_tag("GetStarted.png"),"choose.htm" , :id => 'nohover'  %>
+<a href="#" rel="0" id="pullout"><img src="images/GetStarted.png"></img></a>
 </div>
 <% end %>
 	                </div>
+                   
             </div> 
         </div> 
         
@@ -93,25 +114,65 @@ Meebo('makeEverythingSharable');
                                             
                     </div> 
                 </div> 
-                <!-- <div class="span-9 prefix-1 last"> 
+                <div class="span-9 prefix-1 last"> 
                     <div> 
-                        <b>BragVest iPhone App!</b> 
+                        <b>The Latest Buzz!</b> 
                     </div> 
                     <div class="span-4"> 
-                         <img src="/images/iphone.gif" alt="BragVest iPhone App" /> 
+                      <blockquote> 
+                        <p>I love the idea of this app. Being able to track all of my sons achievements is wonderful.</p>	
+                        <cite>&ndash; traquino98</cite> 
+                      </blockquote> 
+
+                      <blockquote> 
+                        <p>This is a great tool to have on your phone...I'm actually surprised there aren't more apps like this! THANK YOU!</p> 
+                        <cite>&ndash; OperaBound</cite> 
+                      </blockquote> 
+
+                      <blockquote> 
+                        <p>This is a simple app that's easy to use. Every Cubmaster should have this on their phone</p> 
+                        <cite>&ndash; kodebunny</cite> 
+                      </blockquote> 
+
+                      <blockquote> 
+                        <p>As a Cubmaster I get put on the spot a lot by parents who seem to believe that I have memorized every rank requirement by heart. Finally I can just whip out the iPhone instead of digging through my bag!</p> 
+                        <cite>&ndash; The Long Haired Leaping Gnome</cite> 
+                      </blockquote> 
+                      <blockquote> 
+                        <p>This thing is GREAT!!! I'm excited about updates!</p> 
+                        <cite>&ndash; Grifterq</cite> 
+                      </blockquote> 
+                      <blockquote> 
+                        <p>I love this app!! It keeps all of my little scouter's info available to me no matter where I am!!</p> 
+                        <cite>&ndash; ScouterStepMom83</cite> 
+                      </blockquote> 
                     </div> 
-                    <div class="span-5 last" style="margin-top: 20px"> 
+                    <!-- <div class="span-5 last" style="margin-top: 20px"> 
                         <p> 
                             Track cub scout achievements on your iPhone.<br />
                             <a href="iphone.html">Get it now!</a> 
                         </p> 
                         
-                    </div> 
-                  </div> -->
+                      </div> -->
+                  </div>
             </div> 
         </div>        
     </div>    
     
+			<div class="side" title="Choose"> 
+				<h2>Which BragVest do you want?</h2> 
+                <div class="sidepanel">
+                  <a href="iphone.html"><img src="/threefold/app_logo.png" /></a>
+                    iPhone
+                </div>
+                <div class="sidepanel">
+                <a href="/users/new/"><img src="/threefold/ie-logo.png" /></a> 
+                 Web
+                </div>
+                <div class="sidepanel">
+                <img src="/threefold/android-logo.png" />Android (coming soon)
+                </div>
+			</div> 
     <div id="footerWrapper"> 
         <div id="footer" class="container"> 
             <div class="span-8 prefix-1"> 

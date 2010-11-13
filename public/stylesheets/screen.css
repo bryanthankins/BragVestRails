@@ -72,7 +72,7 @@ th, td { border-bottom: 1px solid #ddd; border-right: 1px solid #ccc; }
 
 /* MARGINS & PADDINGS */
 
-blockquote *:first-child { margin: .8em 0; }
+/* blockquote *:first-child { margin: .8em 0; } */
 hr, p, ul, ol, dl, pre, blockquote, address, table, form { margin-bottom: 1.6em; }
 /* NOTE: Calulate header margins: TOP: 1.6em/size, BOTTOM: 1.6em/size/2 */
 h1 { margin: 1em 0 .5em;  }
@@ -92,7 +92,7 @@ select { padding: .1em .2em 0 .2em; }
 option { padding: 0 .4em; }
 a { position: relative; padding: 0.3em 0 .1em 0; } /* for larger click-area */
 dt { margin-top: .8em; margin-bottom: .4em; }
-ul { margin-left: 1.5em; }
+ul { margin-left: 0em; }
 ol { margin-left: 2.35em; }
 ol ol, ul ol { margin-left: 2.5em; }
 form div { margin-bottom: .8em; }
